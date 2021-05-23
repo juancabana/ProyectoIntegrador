@@ -14,7 +14,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -33,25 +35,25 @@
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="Intro.html">Intro
-              <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="first.html">Primer nivel
-              <span class="sr-only">(current)</span>
+              
             </a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="second.html">Segundo nivel</a>
           </li>
-          
+
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="third.html">Tercer nivel</a>
           </li>
@@ -63,42 +65,67 @@
     </div>
   </nav>
 
-  <section class="page-section clearfix">
+  <section class="page-sectionF clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/Pila1.png" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Programación</span>
+            <span class="section-heading-upper">Pilas</span>
             <span class="section-heading-lower">¿Qué son?</span>
           </h2>
-          <p class="mb-3">Las pilas y colas son unas estructuras de datos que se utilizan generalmente
-            para simplificar ciertas operaciones que requieren de programación.
-            Estas estructuras pueden implementarse mediante arrays o mediante
-            listas enlazadas. 
-            La pregunta  ¿Para qué se utilizan las pilas?
-            Las Pilas se utilizan en compiladores, sistemas operativos y programas con el unico proposito
-            de tener una colección ordenada de elementos a las cuales solo se pueden acceder por un único
-            lugar o extremo de la pila es decir como lo denominamos la cima.
-            Las operaciones que caracterizan la pila son las de introducir un nuevo elemento sobre la 
-            cima (push) y la de extraer el elemento situado en la cima (pop)
-            Una forma de ver esta estructura de datos es como una pila de libros en la que sólo se puede
-            coger el libro que está en la cima o apilar más libros sobre la misma, pero los libros que 
-            sostienen la pila no son accesibles pues de otro modo todo se desmoronaría.
-            /Las pilas se pueden implementear guardando elementos en un Array en este caso la longitud de
-            la pila estaria fija.
-            /También implementado un vector para almacenar los elementos.
-            /Otra forma de implementralo sería mediante una lista enlazada en la que cada elemento estaría
-            guardada e un 
+          <p class="mb-3">Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por un único 
+            lugar o extremo de la pila. Los elementos se añaden o se quitan (borran) de la pila sólo por su parte superior (cima). 
+            Este es el caso de una pila de platos, una pila de libros, etc.
+            Es decir, si traemos una pila a la vida real es decir su concepto en el día a día no sería un buen método 
+            para aplicarlo en un hospital, banco, restaurante, puesto que si llego de ultimo soy el primero en ser atendido 
+            y el primero en llegar, es el último en ser atendido.
+            
 
           </p>
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper"> </span>
+          </h2>
 
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper"> </span>
+          </h2>
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Operaciones</span>
+          </h2>
+          <p class="mb-3">Una pila cuenta con 2 operaciones imprescindibles: apilar y Desapilar, a las que en las implementaciones 
+            modernas de las pilas se suelen añadir más de uso habitual.
+            <li> Crear: se crea la pila vacía.</li>
+            <li>Apilar: se añade un elemento a la pila. (push)</li>
+            <li>Desapilar: se elimina el elemento frontal de la pila. (pop)</li>
+            <li>Cima: devuelve el elemento que está en la cima de la pila. (top o peek)</li>
+            <li>Vacía: devuelve cierto si la pila está vacía o falso en caso contrario.</li>           
+
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Para recordar</span>
+              <span class="section-heading-lower">Una pila es una estructura de datos de entradas ordenadas que sólo se pueden 
+                introducir 
+                y eliminar por un extremo, llamado cima.</span>
+            </h2>
+            <p class="mb-0">Explicando la primera parte de este tema</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="page-section cta">
+  <!-- <section class="page-section cta">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
@@ -112,15 +139,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <footer class="footer text-faded text-center py-5">
+   <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Juan Cabana, Alexander Ramirez & Emerson Becerra</p>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
+
+
+
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
