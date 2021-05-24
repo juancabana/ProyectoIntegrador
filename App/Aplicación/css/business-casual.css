@@ -13,11 +13,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2{
   font-family: 'Raleway';
 }
 
@@ -88,7 +84,7 @@ p {
   font-weight: 800;
 }
 
-#mainNav .navbar-nav .nav-item.active .nav-link {
+#mainNav .navbar-nav .nav-link {
   color: #e6a756;
 }
 
@@ -96,10 +92,10 @@ p {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
   }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
+  #mainNav .navbar-nav .nav-item  {
     color: rgba(255, 255, 255, 0.4);
   }
-  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+  #mainNav .navbar-nav   {
     color: #e6a756;
   }
 }
@@ -119,7 +115,7 @@ p {
     margin-top: 3rem;
     position: absolute;
   }
-  .intro .intro-text .intro-button {
+  .intro .intro-text {
     width: 100%;
     left: 0;
     position: absolute;
@@ -146,7 +142,7 @@ p {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.cta .cta-inner:before {
+.cta {
   border-radius: 0.5rem;
   content: '';
   position: absolute;
