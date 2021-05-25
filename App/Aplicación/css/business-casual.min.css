@@ -1,6 +1,6 @@
 body{
    /*Se importa la imagen y los colores en degrade se definen*/
-   background-image:linear-gradient(rgba(15, 17, 47, 0.65),rgba(16, 47, 15, 0.65)),url(../img/bg.jpg);
+   background-image:linear-gradient(rgba(15, 17, 47, 0.65),rgba(15, 47, 27, 0.65)),url(../img/bg.jpg);
     background-attachment:fixed;background-position:center;
     background-size:cover}
     /*fuente del hipertexto del pie de página, color, margen, etc.*/
@@ -40,8 +40,8 @@ body{
        .product-item .product-item-title{position:relative;z-index:1;margin-bottom:-3rem}
     .product-item .product-item-img{position:relative;z-index:0;max-width:60vw}
     .product-item .product-item-description{position:relative;z-index:1;margin-top:-3rem;max-width:50vw}}
-    /*Color de fondo del fondo de pagina*/
-    .address strong{font-size:1.2rem}.footer{background-color:rgba(35, 136, 94, 0.733)}
+    /*Color de fondo del pie de pagina*/
+    .address strong{font-size:1.2rem}.footer{background-color:rgba(34, 126, 118, 0.76)}
     /*Color del texto principal*/
     .text-primary{color:#3ec093!important}
     .bg-primary{background-color:#5d7c71!important}
