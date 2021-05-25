@@ -1,6 +1,6 @@
 body{
    /*Se importa la imagen y los colores en degrade se definen*/
-   background-image:linear-gradient(rgba(15, 17, 47, 0.65),rgba(15, 47, 27, 0.65)),url(../img/bg.jpg);
+   background-image:linear-gradient(rgba(26, 70, 53, 0.356),rgba(15, 45, 47, 0.39)),url(../img/bg.jpg);
     background-attachment:fixed;background-position:center;
     background-size:cover}
     /*fuente del hipertexto del pie de página, color, margen, etc.*/
@@ -16,21 +16,22 @@ body{
     .section-heading .section-heading-lower{display:block;font-size:3rem;font-weight:100}
     /*Color de fondo de los bloques*/
     .bg-faded{background-color:rgba(226, 238, 237, 0.85)}
-    /*Color del mainNav, letras, etc*/#mainNav{background-color:rgba(41, 112, 94, 0.9);font-family:Raleway}
+    /*Color del mainNav, letras, etc*/
+    #mainNav{background-color:rgba(41, 112, 94, 0.9);font-family:Raleway}
     #mainNav.navbar-brand{color:#56c9e6}
     #mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.7);font-weight:800}
     /*color del texto activo*/
-    #mainNav .navbar-nav .nav-item.active .nav-link{color:#00ffb3}@media (min-width:992px)
+    #mainNav .navbar-nav .nav-item.active .nav-link{color:#0debbbe3}@media (min-width:992px)
     {#mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}
-    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255,255,255,.4)}
+    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255, 255, 255, 0.616)}
     /*color mientras el mouse está encima*/
-    #mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#209756}}
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#36c499da}}
     .intro{position:relative}@media (min-width:992px){.intro .intro-img{width:75%;float:right}
     .intro .intro-text{left:0;width:60%;margin-top:3rem;position:absolute}
     .intro .intro-text .intro-button{width:100%;left:0;position:absolute;bottom:-2rem}}@media (min-width:1200px){
        .intro .intro-text{width:45%}}
        /*Color del "Para recordar"*/
-       .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(22, 168, 149, 0.808)}
+       .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(31, 218, 156, 0.856)}
     .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
     .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;
       /*Ancho del borde, poscición de los parrafos, subtitulos, etc.*/
