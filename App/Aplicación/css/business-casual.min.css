@@ -2,7 +2,8 @@ body{
    /*Se importa la imagen y los colores en degrade se definen*/
    background-image:linear-gradient(rgba(26, 70, 53, 0.356),rgba(15, 45, 47, 0.39)),url(../img/bg.jpg);
     background-attachment:fixed;background-position:center;
-    background-size:cover}
+    background-size:cover
+   }
     /*fuente del hipertexto del pie de página, color, margen, etc.*/
     h1,h2{font-family:Raleway}p{line-height:1.75}
     .text-faded{color:rgb(255, 255, 255)}
