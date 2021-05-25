@@ -5,10 +5,18 @@
 
   <meta charset="UTF-8">
   <title>Formulario ingreso</title>
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!--Se importan los archivos-->
   <link rel="stylesheet" href="./style.css">
   <script src="script.js"></script>
+ <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
+ <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+  <!--Se pone la fuente del hipertexto-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+  <style>
+    body {
+      font-family: 'Crimson Pro', serif;
+    }
+  </style>
 
 </head>
 
@@ -37,7 +45,7 @@
             <!---Campo de la contraseña-->
             <div class="field-wrap">
               <label>
-                Conraseña<span class="req">*</span>
+                Contraseña<span class="req">*</span>
               </label>
               <input type="password" required autocomplete="off" />
             </div>
@@ -57,7 +65,7 @@
 
     </div>
 
-  </div> 
+  </div>
 
   <!-- Enlace a donde están los comportamientos de los elementos -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
