@@ -1,6 +1,6 @@
 body{
    /*Se importa la imagen y los colores en degrade se definen*/
-   background-image:linear-gradient(rgba(26, 70, 53, 0.356),rgba(15, 45, 47, 0.39)),url(../img/bg.jpg);
+   background-image:linear-gradient(rgba(26, 70, 53, 0.356),rgba(15, 45, 47, 0.39)),url(img/bg.jpg);
     background-attachment:fixed;background-position:center;
     background-size:cover
    }
@@ -32,13 +32,16 @@ body{
     .intro .intro-text .intro-button{width:100%;left:0;position:absolute;bottom:-2rem}}@media (min-width:1200px){
        .intro .intro-text{width:45%}}
        /*Color del "Para recordar"*/
-       .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(31, 218, 156, 0.856)}
+       .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(30, 197, 141, 0.856)}
     .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
     .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;
       /*Ancho del borde, poscición de los parrafos, subtitulos, etc.*/
       border:.25rem ;z-index:-1}@media (min-width:992px){
        .about-heading .about-heading-img{position:relative;z-index:0}
-    .about-heading .about-heading-content{margin-top:-5rem;position:relative;z-index:1}}@media (min-width:992px){
+    .about-heading .about-heading-content{
+       margin-top:-5rem;
+       position:relative;
+       z-index:1}}@media (min-width:992px){
        .product-item .product-item-title{position:relative;z-index:1;margin-bottom:-3rem}
     .product-item .product-item-img{position:relative;z-index:0;max-width:60vw}
     .product-item .product-item-description{position:relative;z-index:1;margin-top:-3rem;max-width:50vw}}
@@ -47,3 +50,19 @@ body{
     /*Color del texto principal*/
     .text-primary{color:#3ec093!important}
     .bg-primary{background-color:#5d7c71!important}
+  .button{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1d4b3b;
+    background-color: #2a8f8691;
+    border-radius: 6px;
+    border-color: #1884ba00;
+   margin-top:1.5rem;margin-bottom:1rem;text-transform:uppercase
+
+
+  }
+  .button:hover{
+   color: #ffffffd3;
+   background-color: rgba(34, 126, 118, 0.76);
+}

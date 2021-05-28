@@ -10,6 +10,8 @@
  <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
   <title>App pilas y colas</title>
+  <script src="script.js"></script>
+
 
   <!-- Aquí se importa bootstrap -->7
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
   <!-- Aquí se enlaza el css -->
-  <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="business-casual.min.css" rel="stylesheet">
 
 </head>
 
@@ -125,7 +127,15 @@
       </div>
     </div>
   </section>
-
+  <section class="page-section cta">
+    <div class="container">
+      <div class="bg-faded rounded p-5">
+        <!---se ainea el botón  -->
+        <button onclick="FirstLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
+  
+      </div>
+    </div>
+  </section>
 
 
    <footer class="footer text-faded text-center py-5">
@@ -134,7 +144,7 @@
     </div>
   </footer>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js" ></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
