@@ -3,7 +3,11 @@
   }
 
   body {
-    background: cadetblue;
+    background-image:linear-gradient(rgba(65, 26, 70, 0),rgba(33, 47, 15, 0)),url(
+      ../img/bg.jpg);
+    background-attachment:fixed;background-position:center;
+    
+    background-size:cover;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -12,6 +16,7 @@
   }
 
   .contenedor {
+    /*Se le quita el scroll y se centra el contenedor*/
     width: 98vw;
     height: 97vh;
     display: inline-flex;
@@ -21,40 +26,56 @@
   }
 
   .encabezado {
+    /*Se pinta el encabezado, y se le ajustan las propiedades*/
     position: relative;
-    background: white;
+    background: rgba(54, 141, 112, 0.904);
     min-width: 300px;
     width: 70%;
     max-width: 600px;
     padding: 10px;
+    border-radius:.3rem;
+    margin-bottom: 10px;
+
   }
 
   .categoria {
-    opacity: 0.3;
+    /*Se pone a la izquierda del encabezado*/
     text-align: left;
+    color:rgb(8, 48, 48);
   }
 
   .pregunta {
     padding: 10px;
+    color: white;
   }
 
   .imagen {
+    /*La imagen de apoyo a la pregunta*/
     object-fit: cover;
     height: 0px;
     width: 0px;
+    border-radius:.3rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
   }
 
   .btn {
-    background: white;
+    /*Se le dan las propiedades de los botones botón*/
+    background: rgb(255, 255, 255);
     width: 60%;
     max-width: 550px;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    border-radius:.9rem;
+    color:rgb(3, 41, 44);
+
+
   }
 
   .btn:hover {
-    transform: scale(1.05);
+    /*Se le agrega el efecto al botón*/
+    transform: scale(1.1);
   }
   
   .numero{

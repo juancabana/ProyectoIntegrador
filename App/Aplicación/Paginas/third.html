@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>App pilas y colas</title>
+  <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
+  <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+  <!-- Aquí se enlaza bootstrap -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- De aquí se sacan las fuentes de la letra -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Aquí se enlaza el css -->
+  <link href="business-casual.min.css" rel="stylesheet">
+  <script src="enlaces.js"></script>
+
+
+</head>
+
+<body>
+
+  <h1 class="encabezadoPag text-center text-white d-none d-lg-block">
+    <span class="encabezadoPag-superior text-primary mb-3">Proyecto integrador</span>
+    <span class="encabezadoPag">PILAS Y COLAS</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="Intro.html">Intro</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="first.html">Primer nivel</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="second.html">Segundo nivel</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="third.html">Tercer nivel</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="fourth.html">Cuarto nivel</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">Tercer nivel</span>
+              <span class="section-heading-lower">Colas</span>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="../img/Cola1.png" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">Una cola es una estructura de datos, caracterizada por ser una secuencia de elementos en la
+              que la
+              operación de inserción (push) se realiza por un extremo y la operación de extracción (pop) por el otro extremo.
+              A estas estructuras también se le llama estructura "FIFO" (Del inglés first-in, first-out, primero en entrar-primero en salir)
+              Las colas se utilizan en sistemas informáticos, transportes y operaciones de investigación (entre otros),
+              dónde los objetos, personas o eventos son tomados como datos que se almacenan y se guardan mediante colas
+              para su posterior procesamiento. Este tipo de estructura de datos abstracta se implementa en lenguajes
+              orientados a objetos mediante clases, en forma de listas enlazadas.
+            </p>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper"> </span>
+            </h2>
+
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper"> </span>
+            </h2>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Operaciones</span>
+            </h2>
+            <p class="mb-3">Una Cola cuenta con 2 operaciones imprescindibles: remover e insertar, a las que en las
+              implementaciones
+              modernas de las colas se suelen añadir más de uso habitual.
+              <li> Crear: Inicia la cola como vacía.</li>
+              <li>Insertar: Añade un elemento por el final de la cola.</li>
+              <li>Retirar: (extrae) el elemento frente de la cola.</li>
+              <li>Cola vacía: Comprueba si la cola no tiene elementos.</li>
+              <li>Cola llena: Comprueba si la cola está llena de elementos.</li>
+              <li>Tamaño de la cola: Número de elementos máximo que puede contener la cola</li>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="bg-faded rounded p-5">
+        <!---se ainea el botón  -->
+        <button onclick="ThirdLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Juan Cabana, Alexander Ramirez & Emerson Becerra</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+</body>
+
+</html>

@@ -4,17 +4,15 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
- <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
- <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+
+  <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
+  <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
   <title>App pilas y colas</title>
-  <script src="script.js"></script>
+  <script src="enlaces.js"></script>
 
 
   <!-- Aquí se importa bootstrap -->7
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- De aquí se sacan las fuentes de la letra -->
   <link
@@ -29,29 +27,22 @@
 
 <body>
 
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Proyecto integrador</span>
-    <span class="site-heading-lower">PILAS Y COLAS</span>
+  <h1 class="encabezadoPag text-center text-white d-none d-lg-block">
+    <span class="encabezadoPag-superior text-primary mb-3">Proyecto integrador</span>
+    <span class="encabezadoPag">PILAS Y COLAS</span>
   </h1>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="Intro.html">Intro
-            </a>
+            <a class="nav-link text-uppercase text-expanded" href="Intro.html">Intro</a>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="first.html">Primer nivel
-              
-            </a>
+            <a class="nav-link text-uppercase text-expanded" href="first.html">Primer nivel</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="second.html">Segundo nivel</a>
@@ -71,19 +62,24 @@
   <section class="page-sectionF clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/Pila1.png" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="../img/Pila1.png" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Pilas</span>
             <span class="section-heading-lower">¿Qué son?</span>
           </h2>
-          <p class="mb-3">Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por un único 
-            lugar o extremo de la pila. Los elementos se añaden o se quitan (borran) de la pila sólo por su parte superior (cima). 
-            Este es el caso de una pila de platos, una pila de libros, etc.
-            Es decir, si traemos una pila a la vida real es decir su concepto en el día a día no sería un buen método 
-            para aplicarlo en un hospital, banco, restaurante, puesto que si llego de ultimo soy el primero en ser atendido 
-            y el primero en llegar, es el último en ser atendido.
-            
+          <p class="mb-3">Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por
+            un único lugar
+            de la pila, este lugar es la cima. Los elementos se añaden (apilar) o se quitan (desapilar) de la pila sólo
+            por su parte superior (cima).<br>
+            A estas estructuras se les llama también estructuras "LIFO" (Del ingles, Last-in, first-out, último en entrar primero en salir)
+            ASÍ es el comportamiento de una pila, como la de una pila de platos, una pila de libros, etc.
+            Es decir, si traemos el concepto de una pila a la vida real, los libros serían un buen ejemplo. Si se pone
+            sobre la mesa un libro de
+            matemáticas, y sobre el se pone uno de ingles, y sobre este se pone uno de religión... El primer libro que
+            quitaríamos de la pila,
+            es el de religión, ya que está en la cima de esta.
+
 
           </p>
           <h2 class="section-heading mb-4">
@@ -96,20 +92,24 @@
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Operaciones</span>
           </h2>
-          <p class="mb-3">Una pila cuenta con 2 operaciones imprescindibles: apilar y Desapilar, a las que en las implementaciones 
+          <p class="mb-3">Una pila cuenta con 2 operaciones imprescindibles: apilar y Desapilar, a las que en las
+            implementaciones
             modernas de las pilas se suelen añadir más de uso habitual.
-            <li> Crear: se crea la pila vacía.</li>
-            <li>Apilar: se añade un elemento a la pila. (push)</li>
-            <li>Desapilar: se elimina el elemento frontal de la pila. (pop)</li>
-            <li>Cima: devuelve el elemento que está en la cima de la pila. (top o peek)</li>
-            <li>Vacía: devuelve cierto si la pila está vacía o falso en caso contrario.</li>           
+            <li>Crear: se crea la pila vacía.</li><br>
+            <li>Apilar: se añade un elemento a la pila. (push)</li><br>
+            <li>Desapilar: se elimina el elemento frontal de la pila. (pop)</li><br>
+            <li>Cima: devuelve el elemento que está en la cima de la pila. (top o peek)</li><br>
+            <li>Vacía: devuelve "true" si la pila está vacía o "false" si existe algún elemento en esta.</li> <br>
 
           </p>
         </div>
       </div>
     </div>
-    
+
   </section>
+  <br>
+  <br>
+
   <section class="page-section cta">
     <div class="container">
       <div class="row">
@@ -117,11 +117,12 @@
           <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Para recordar</span>
-              <span class="section-heading-lower">Una pila es una estructura de datos de entradas ordenadas que sólo se pueden 
-                introducir 
+              <span class="section-heading-lower">Una pila es una estructura de datos de entradas ordenadas que sólo se
+                pueden
+                introducir
                 y eliminar por un extremo, llamado cima.</span>
             </h2>
-            <p class="mb-0">Recordar</p>
+            <p class="mb-0"></p>
           </div>
         </div>
       </div>
@@ -132,20 +133,19 @@
       <div class="bg-faded rounded p-5">
         <!---se ainea el botón  -->
         <button onclick="FirstLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
-  
+
       </div>
     </div>
   </section>
 
 
-   <footer class="footer text-faded text-center py-5">
+  <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Juan Cabana, Alexander Ramirez & Emerson Becerra</p>
     </div>
   </footer>
 
-  <script src="vendor/jquery/jquery.min.js" ></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
 
 </body>
 
