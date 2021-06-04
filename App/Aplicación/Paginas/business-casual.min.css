@@ -6,17 +6,18 @@ body{
    }
     /*fuente del hipertexto del pie de página, color, margen, etc.*/
     h2{font-family:Raleway}p{line-height:1.75}    
-   .text-faded{color:rgb(255, 255, 255)}
+   .texto-piePag{color:rgb(255, 255, 255)}/*Se define el color de la letra del pie de pagina*/
    .encabezadoPag{margin-top:5rem;margin-bottom:5rem;text-transform:uppercase;line-height:1;font-family:Raleway}
    .encabezadoPag .encabezadoPag-superior{display:block;font-size:2rem;font-weight:800}
-    /*Margen máximo y mínimo de las páginas*/
-   .page-section{margin-top:5rem;margin-bottom:5rem}
-   .page-sectionF{margin-top:5rem;margin-bottom:30rem}
+    /*Margen máximo y mínimo de las secciones de las páginas*/
+   .sección-Pag{margin-top:5rem;margin-bottom:5rem}
+   .sección-PagF{margin-top:5rem;margin-bottom:30rem}
    /*Estilo de los encabezados de los Nav*/
-   .section-heading{text-transform:uppercase}.section-heading .section-heading-upper{display:block;font-size:1rem;font-weight:800}
-   .section-heading .section-heading-lower{display:block;font-size:3rem;font-weight:100}
+   .sección-título{text-transform:uppercase}.sección-título /*Se transforma todo a Mayuscula*/
+   .sección-título-superior{display:block;font-size:1rem;font-weight:800}
+   .sección-título-inferior{display:block;font-size:3rem;font-weight:100}
     /*Color de fondo de los bloques*/
-   .bg-faded{background-color:rgba(226, 238, 237, 0.85)}
+   .bg-desvanencido{background-color:rgba(226, 238, 237, 0.85)}
     /*Color del mainNav, letras, etc*/
    #mainNav{background-color:rgba(41, 112, 94, 0.9);font-family:Raleway}
    #mainNav {color:rgba(255,255,255,.7);font-weight:800}
@@ -31,23 +32,23 @@ body{
    .intro .intro-text .intro-button{width:100%;left:0;position:absolute;bottom:-2rem}}@media (min-width:1200px){
        .intro .intro-text{width:45%}}
        /*Color del "Para recordar"*/
-   .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(30, 197, 141, 0.856)}
-   .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
+   .cta{padding-top:2rem;padding-bottom:2rem;background-color:rgba(30, 197, 141, 0.856)}
+   .cta .cta-inner{position:relative;padding:2rem;margin:.2rem;background-color:rgba(255,255,255,.85)}
    .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;
-      /*Ancho del borde, poscición de los parrafos, subtitulos, etc.*/
-      border:.25rem ;z-index:-1}@media (min-width:992px){
-      .about-heading .about-heading-img{position:relative;z-index:0}
-      .about-heading .about-heading-content{
+      /*Ancho del borde, poscición de los parrafos que acompañan a los ejemplos, subtitulos, etc.*/
+      z-index:-1}@media (min-width:992px){
+      .encabezado-ejemplo .encabezado-ejemplo-img{position:relative;z-index:0}
+      .encabezado-ejemplo .encabezado-ejemplo-content{
        margin-top:-5rem;
        position:relative;
        z-index:1}}@media (min-width:992px){
-       .product-item .product-item-title{position:relative;z-index:1;margin-bottom:-3rem}
-   .product-item .product-item-img{position:relative;z-index:0;max-width:60vw}
-   .product-item .product-item-description{position:relative;z-index:1;margin-top:-3rem;max-width:50vw}}
+       .item-TercNiv .item-TercNiv-title{position:relative;z-index:1;margin-bottom:-3rem}
+   .item-TercNiv .item-TercNiv-img{position:relative;z-index:0;max-width:60vw}
+   .item-TercNiv .item-TercNiv-description{position:relative;z-index:1;margin-top:-3rem;max-width:50vw}}
     /*Color de fondo del pie de pagina*/
-   .address strong{font-size:1.2rem}.footer{background-color:rgba(34, 126, 118, 0.76)}
+   .footer strong{font-size:1.2rem}.footer{background-color:rgba(34, 126, 118, 0.76)}
     /*Color del texto principal*/
-   .text-primary{color:#3ec093!important}
+   .texto-principal{color:#3ec093!important}
    .bg-primary{background-color:#5d7c71!important}
   .button{
     padding: 20px;

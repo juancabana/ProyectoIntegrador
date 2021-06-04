@@ -5,11 +5,13 @@
 
   <meta charset="utf-8">
 
+  <title>App pilas y colas</title>
+
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
-  <title>App pilas y colas</title>
-  <script src="enlaces.js"></script>
 
+  <!--aquí se enlaza el archivo javascript-->
+  <script src="enlaces.js"></script>
 
   <!-- Aquí se importa bootstrap -->7
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +30,7 @@
 <body>
 
   <h1 class="encabezadoPag text-center text-white d-none d-lg-block">
-    <span class="encabezadoPag-superior text-primary mb-3">Proyecto integrador</span>
+    <span class="encabezadoPag-superior texto-principal">Proyecto integrador</span>
     <span class="encabezadoPag">PILAS Y COLAS</span>
   </h1>
 
@@ -59,87 +61,304 @@
     </div>
   </nav>
 
-  <section class="page-sectionF clearfix">
+  <section class="sección-PagF clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="../img/Pila1.png" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Pilas</span>
-            <span class="section-heading-lower">¿Qué son?</span>
+        <img class="intro-img rounded" src="../img/Pila1.png" alt="">
+        <div class="intro-text text-left bg-desvanencido p-5 rounded">
+
+          <h2 class="sección-título ">
+            <span class="sección-título-superior">Pilas</span>
+            <span class="sección-título-inferior">¿Qué son?</span>
           </h2>
-          <p class="mb-3">Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por
+
+          <p>Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por
             un único lugar
             de la pila, este lugar es la cima. Los elementos se añaden (apilar) o se quitan (desapilar) de la pila sólo
             por su parte superior (cima).<br>
-            A estas estructuras se les llama también estructuras "LIFO" (Del ingles, Last-in, first-out, último en entrar primero en salir)
+            A estas estructuras se les llama también estructuras "LIFO" (Del ingles, Last-in, first-out, último en
+            entrar primero en salir)
             ASÍ es el comportamiento de una pila, como la de una pila de platos, una pila de libros, etc.
-            Es decir, si traemos el concepto de una pila a la vida real, los libros serían un buen ejemplo. Si se pone
+            Es decir, si traemos el concepto de una pila a la vida real, los libros serían un buen ejemplo.<br>
+            Si se pone
             sobre la mesa un libro de
             matemáticas, y sobre el se pone uno de ingles, y sobre este se pone uno de religión... El primer libro que
             quitaríamos de la pila,
             es el de religión, ya que está en la cima de esta.
-
-
           </p>
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper"> </span>
+
+          <br>
+
+          <h2 class="sección-título ">
+            <span class="sección-título-superior">Operaciones</span>
           </h2>
 
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper"> </span>
-          </h2>
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Operaciones</span>
-          </h2>
-          <p class="mb-3">Una pila cuenta con 2 operaciones imprescindibles: apilar y Desapilar, a las que en las
+          <p>Una pila cuenta con 2 operaciones imprescindibles: apilar y Desapilar, a las que en las
             implementaciones
             modernas de las pilas se suelen añadir más de uso habitual.
-            <li>Crear: se crea la pila vacía.</li><br>
-            <li>Apilar: se añade un elemento a la pila. (push)</li><br>
-            <li>Desapilar: se elimina el elemento frontal de la pila. (pop)</li><br>
-            <li>Cima: devuelve el elemento que está en la cima de la pila. (top o peek)</li><br>
+            <li>Crear: se crea la pila vacía.</li>
+            <li>Apilar: se añade un elemento a la pila (push). </li>
+            <li>Desapilar: se elimina el elemento frontal de la pila (pop). </li>
+            <li>Cima: devuelve el elemento que está en la cima de la pila (top o peek). </li>
             <li>Vacía: devuelve "true" si la pila está vacía o "false" si existe algún elemento en esta.</li> <br>
-
           </p>
         </div>
       </div>
     </div>
-
   </section>
-  <br>
+
+
   <br>
 
-  <section class="page-section cta">
+
+  <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Para recordar</span>
-              <span class="section-heading-lower">Una pila es una estructura de datos de entradas ordenadas que sólo se
-                pueden
-                introducir
-                y eliminar por un extremo, llamado cima.</span>
+      <div class="encabezado-ejemplo-content text-center">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9  mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título ">
+              <span class="sección-título-superior">Pila</span>
             </h2>
-            <p class="mb-0"></p>
+
+            <p>
+              Como podemos ver, la pila muestra una secuencia de operaciones "Insertar" y "Quitar". <br>
+              El último elemento añadido a la pila es el primero que se quita de ella
+            </p>
+
+
+            <img class="encabezado-ejemplo rounded" src="../img/Pila3.png" alt="">
+
+            <p>
+              La operación "Insertar" (push) sitúa un elemento dato en la cima de la pila, y "Quitar" (pop)
+              elimina o quita el elemento de la pila. <br>
+              El último elemento añadido a la pila es el primero que se quita de ella
+            </p>
+
+            <img class="encabezado-ejemplo rounded" src="../img/Pila4.png" alt="">
+
+            <p>
+              La pila se puede implementar guardando los elementos en un array, en cuyo caso su dimensión o longitud es
+              fija.
+              También se puede utilizar un Vector para almacenar los elementos. <br>
+              Otra forma de implementación consiste en construir una lista enlazada, de modo que cada elemento de la
+              pila forma un nodo de la lista. La lista crece o decrece según se añaden o se extraen, respectivamente,
+              elementos de la pila; ésta es una representación dinámica, y no existe limitación en su tamaño excepto la
+              memoria del computador.
+            </p>
+
+            <p>
+              Una pila puede estar vacía (no tiene elementos) o llena (en la representación con un array —arreglo—, si
+              se ha llegado al último elemento). Si un programa intenta sacar un elemento de una pila vacía, se
+              producirá un error, una excepción, debido a que esa operación es imposible; esta situación se denomina
+              desbordamiento negativo (underflow). Por el contrario, si un programa intenta poner un elemento en una
+              pila llena, se produce un error, una excepción, de desbordamiento (overflow) o rebosamiento. <br>
+              Para evitar estas situaciones se diseñan métodos que comprueban si la pila está llena o vacía.
+            </p>
+
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="page-section cta">
-    <div class="container">
-      <div class="bg-faded rounded p-5">
-        <!---se ainea el botón  -->
-        <button onclick="FirstLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
 
+
+  <br>
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">TIPO DE DATO PILA IMPLEMENTADO CON ARRAYS</span>
+            </h2>
+
+            <p>
+              Los elementos que forman la pila se guardan en arrays (arreglos), en el contenedor “Vector” o bien
+              formando una lista enlazada. La implementación con un array (arreglo) es estática ya que el arrray es de
+              tamaño fijo.<br>
+              En otras palabras, podría sr útil en algunas ocasiones, pero la idea es ver, que podamos crear una pila
+              sin necesidad de estar preocupado por el tamaño.
+              La clase PilaLineal, con esta representación, necesita un array y una variable numérica, cima, que apunte
+              al último elemento colocado en la pila. Al utilizar un array es necesario tener en cuenta que el tamaño de
+              la pila no puede exceder el número de elementos del array, y la condición pila llena será significativa
+              para el diseño.<br>
+              El método usual de introducir elementos en una pila es definir el fondo de la pila en la posición 0 del
+              array y sin ningún elemento en su interior, es decir, definir una pila vacía; a continuación, se van
+              introduciendo elementos en la pila (en el array), de modo que el primer elemento añadido se introduce en
+              una pila vacía y en la posición 0, el segundo elemento en la posición 1, el siguiente en la posición 2 y
+              así sucesivamente. Con estas operaciones, el índice que apunta a la cima de la pila se va incrementando en
+              1 cada vez que se añade un nuevo elemento. Los algoritmos de introducir, “insertar” (push) y “quitar”,
+              sacar, (pop) datos de la pila son
+            </p>
+
+            <br>
+
+            <h2 class="sección-título ">
+              <span class="sección-título-superior">Insertar (push) </span>
+            </h2>
+
+            <li value="1">Verificar si la pila no está llena.</li>
+            <li value="2">Incrementar en 1 el puntero índice de la pila.</li>
+            <li value="3">Almacenar elemento en la posición del puntero de la pila</li>
+
+            <h2 class="sección-título">
+              <br>
+              <span class="sección-título-superior">Quitar (pop)</span>
+            </h2>
+
+            <li value="1">Verificar si la pila no está llena.</li>
+            <li value="2">Leer el elemento de la posición del puntero de la pila.</li>
+            <li value="3">Decrementar en 1 el puntero de la pila</li>
+
+            <br>
+
+            <p>
+
+              El rango de elementos que puede tener una pila varía de 0 a TAMPILA-1 en el supuesto de que el array se
+              defina de tamaño TAMPILA elementos.
+
+              De modo que, en una pila llena, el puntero (índice del array) de la pila tiene el valor TAMPILA-1, y en
+              una pila vacía el puntero tendrá el valor -1 (el valor 0, teóricamente es el índice del primer elemento).
+
+              <center>
+                <img class="encabezado-ejemplo mb-lg-1 rounded" src="../img/Pila5.png" alt="">
+              </center>
+
+            </p>
+
+            <p>
+              Una pila de 7 elementos se puede representar gráficamente así:
+              <img class="encabezado-ejemplo mb-lg-1 rounded" src="../img/Pila6.png" alt="">
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="sección-Pag cta">
+    <div class="container">
+
+      <!--Centrado del div y anchura-->
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+
+          <h2 class="sección-título">
+            <span class="sección-título-superior">Para recordar</span>
+
+            <span class="sección-título-inferior">Una pila es una estructura de datos de entradas ordenadas que sólo se
+              pueden introducir y eliminar por un extremo, llamado "cima".
+            </span>
+
+          </h2>
+
+        </div>
       </div>
     </div>
   </section>
 
 
-  <footer class="footer text-faded text-center py-5">
+  <br>
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Codificación</span>
+            </h2>
+
+            <p>
+              Escribir un programa que cree una pila de enteros y realice operaciones de añadir datos a
+              la pila, quitar...
+              Se supone implementada la pila con el tipo primitivo int. El programa crea una pila de
+              números enteros. <br>
+              El ususario tiene la opción de... <br>
+              <li>Insertar nodo</li>
+              <li>Eliminar nodo</li>
+              <li>Verificar si la pila está vacia</li>
+              <li>Mostrar cual es el ultimo numero ingresado en la pila</li>
+              <li>Mostrar cuantos numeros tiene la pila</li>
+              <li>Vaciar la pila</li>
+              <li>Mostrar el contenido de la pila</li>
+
+            </p>
+
+            <br>
+
+            <p>
+              Primero se crea la clase donde vamos a construir nuestros nodos <br>
+              Una lista enlazada se compone de una serie de nodos enlazados mediante referencias. En Java, se
+              declara una clase para contener las dos partes del nodo: dato y enlace. Por ejemplo, para una
+              lista enlazada de números enteros, la clase Nodo es: <br>
+              __________________________________________________________________________________________________________
+            </p>
+
+            <pre>
+package lista_tipo_pila;
+
+public class Nodo {
+    private int informacion;
+    private Nodo siguiente;
+    
+    public Nodo(int valor){
+        setInformacion(valor);
+        setSiguiente(null);
+    }
+
+    public int getInformacion() {
+        return informacion;
+    }
+
+    public void setInformacion(int informacion) {
+        this.informacion = informacion;
+    }
+
+    public Nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+}
+            </pre>
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sección-Pag cta">
+    <div class="container">
+      <div class="bg-desvanencido rounded p-5">
+        <!---se ainea el botón  -->
+        <button onclick="FirstLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer texto-piePag text-center py-5">
     <div class="container">
       <p class="m-0 small">Juan Cabana, Alexander Ramirez & Emerson Becerra</p>
     </div>

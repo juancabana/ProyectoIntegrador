@@ -4,9 +4,15 @@
 <head>
 
   <meta charset="utf-8">
+
   <title>App pilas y colas</title>
+
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+
+  <!--aquí se enlaza el archivo javascript-->
+  <script src="enlaces.js"></script>
+
   <!-- Aquí se enlaza bootstrap -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,15 +24,12 @@
 
   <!-- Aquí se enlaza el css -->
   <link href="business-casual.min.css" rel="stylesheet">
-  <script src="enlaces.js"></script>
-
-
 
 </head>
 
 <body>
   <h1 class="encabezadoPag text-center text-white d-none d-lg-block">
-    <span class="encabezadoPag-superior text-primary mb-3">Proyecto integrador</span>
+    <span class="encabezadoPag-superior texto-principal">Proyecto integrador</span>
     <span class="encabezadoPag">PILAS Y COLAS</span>
   </h1>
 
@@ -34,7 +37,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="Intro.html">Intro</a>
@@ -56,16 +59,16 @@
     </div>
   </nav>
 
-  <section class="page-section clearfix">
+  <section class="sección-Pag clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="../img/intro.jpg" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Pilas y colas</span>
-            <span class="section-heading-lower">¿Qué son?</span>
+        <img class="intro-img rounded" src="../img/intro.jpg" alt="">
+        <div class="intro-text text-center bg-desvanencido p-5 rounded">
+          <h2 class="sección-título">
+            <span class="sección-título-superior">Pilas y colas</span>
+            <span class="sección-título-inferior">¿Qué son?</span>
           </h2>
-          <p class="mb-3">Las pilas y colas son estructuras de datos que se utilizan generalmente para simplificar
+          <p>Las pilas y colas son estructuras de datos que se utilizan generalmente para simplificar
             ciertas
             operaciones de programación. Estas estructuras pueden implementarse mediante arrays o mediante listas
             enlazadas.
@@ -82,16 +85,18 @@
     </div>
   </section>
 
-  <section class="page-section cta">
+
+
+  <section class="sección-Pag cta">
     <div class="container">
-      <div class="bg-faded rounded p-5">
+      <div class="bg-desvanencido rounded p-5">
         <!---se ainea el botón  -->
         <button onclick="IntroLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
       </div>
     </div>
   </section>
 
-  <footer class="footer text-faded text-center py-5">
+  <footer class="footer texto-piePag text-center py-5">
     <div class="container">
       <p class="m-0 small">Juan Cabana, Alexander Ramirez & Emerson Becerra</p>
     </div>

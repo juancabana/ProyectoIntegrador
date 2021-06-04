@@ -94,6 +94,8 @@ textarea {
   margin-bottom: 40px;
 }
 
+
+/*Estilo de la fila de campos de texto*/
 .top-row:after {
   content: "";
   display: table;
@@ -107,6 +109,9 @@ textarea {
 .top-row > div:last-child {
   margin: 0;
 }
+
+
+
 /*Estilo del boton*/
 .button {
   border: 0;
