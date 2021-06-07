@@ -10,8 +10,6 @@
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
 
-  <!--aquí se enlaza el archivo javascript-->
-  <script src="enlaces.js"></script>
 
   <!-- Aquí se enlaza bootstrap -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +59,6 @@
   </nav>
 
 
-
   <section class="sección-Pag">
     <div class="container">
       <div class="item-TercNiv">
@@ -76,6 +73,11 @@
         <img class="item-TercNiv-img mx-auto d-flex rounded" src="../img/Cola1.png" alt="">
         <div class="item-TercNiv-description d-flex mr-auto">
           <div class="bg-desvanencido p-5 rounded">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">¿Qué son?</span>
+            </h2>
+
             <p class="mb-0">Una cola es una estructura de datos, caracterizada por ser una secuencia de elementos en la
               que la
               operación de inserción (push) se realiza por un extremo y la operación de extracción (pop) por el otro
@@ -87,35 +89,233 @@
               para su posterior procesamiento. Este tipo de estructura de datos abstracta se implementa en lenguajes
               orientados a objetos mediante clases, en forma de listas enlazadas.
             </p>
+
             <br>
+
             <h2 class="sección-título">
               <span class="sección-título-superior">Operaciones</span>
             </h2>
-            <p >Una Cola cuenta con 2 operaciones imprescindibles: remover e insertar, a las que en las
+
+            <p>Una Cola cuenta con 2 operaciones imprescindibles: remover e insertar, a las que en las
               implementaciones
               modernas de las colas se suelen añadir más de uso habitual.
               <li> Crear: Inicia la cola como vacía.</li>
-              <li>Insertar: Añade un elemento por el final de la cola.</li>
-              <li>Retirar: (extrae) el elemento frente de la cola.</li>
+              <li>Insertar (Apilar): Añade un elemento por el final de la cola.</li>
+              <li>Retirar (Desapilar): (extrae) el elemento frente de la cola.</li>
               <li>Cola vacía: Comprueba si la cola no tiene elementos.</li>
               <li>Cola llena: Comprueba si la cola está llena de elementos.</li>
-              <li>Tamaño de la cola: Número de elementos máximo que puede contener la cola</li>
+              <li>Tamaño de la cola: Número de elementos máximo que puede contener la cola.</li>
 
             </p>
+
+            <img src="../img/Cola7.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="sección-Pag cta">
-    <div class="container">
-      <div class="bg-desvanencido rounded p-5">
-        <!---se ainea el botón  -->
-        <button onclick="ThirdLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
 
+<br>
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content text-center">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9  mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título ">
+              <span class="sección-título-superior">Cola</span>
+            </h2>
+
+            <p>
+              En una cola, al igual que en una pila, los datos se almacenan de un modo lineal y el acceso a los datos
+              sólo está permitido en los extremos de la cola.
+            </p>
+
+
+            <img class="encabezado-ejemplo rounded" src="../img/Cola3.png" alt="">
+
+            <p>
+              La forma que los lenguajes tienen para representar el TAD Cola depende de donde se almacenen los
+              elementos: en un array, en una estructura dinámica como puede ser un Vector (contenedor de Java) o en una
+              lista enlazada. <br>
+
+              La utilización de arrays tiene el problema de que la cola no puede crecer indefinidamente, está limitada
+              por el tamaño del array; como contrapartida, el acceso a los extremos es muy eficiente. <br>
+
+              Utilizar una lista enlazada permite que el número de nodos se ajuste al de elementos de la cola; por el
+              contrario, cada nodo necesita memoria extra para el enlace, y también hay que tener en cuenta el límite de
+              memoria de la pila del computador. <br>
+
+              A continuación veremos una representación gráfica de operaciones insertar y quitar.
+            </p>
+
+            <h2 class="sección-título ">
+              <span class="sección-título-superior">Insertar</span>
+            </h2>
+
+            <img class="encabezado-ejemplo rounded" src="../img/Cola4.png" alt="">
+
+            <br>
+            <br>
+
+            <h2 class="sección-título ">
+              <span class="sección-título-superior">Quitar</span>
+            </h2>
+
+            <img class="encabezado-ejemplo rounded" src="../img/Cola5.png" alt="">
+
+            <br>
+
+
+            <font size=2>
+              <cite>
+                Aguilar, L.J. & Martinez, I.z. (2008). Madrid, España:
+                Estructura de daton en Java
+              </cite>
+            </font>
+
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+
+  <br>
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">COLAS IMPLEMENTADAS CON ARRAYS:</span>
+            </h2>
+
+            <p>
+              Al igual que las pilas, las colas se implementan utilizando una estructura estática (arrays) o
+              una estructura dinámica (listas enlazadas, Vector...). En esta sección se considera la implementación con
+              arrays. <br>
+              La declaración de una Cola ha de contener un array para almacenar los
+              elementos de la cola y dos marcadores o apuntadores para mantener las posiciones frente y fin
+              de la cola, es decir, un marcador apuntando a la posición de la cabeza de la cola y el otro al primer
+              espacio vacío que sigue al final de la cola. Cuando un elemento se añade a la cola, se verifica
+              si el marcador fin apunta a una posición válida, y entonces se añade el elemento a la cola y se
+              incrementa el marcador fin en 1. Cuando un elemento se elimina de la cola, se hace una prueba
+              para ver si la cola está vacía y, si no es así, se recupera el elemento de la posición apuntada por el
+              marcador de cabeza, y éste se incrementa en 1. <br>
+              La operación de poner un elemento en la cola comienza en la posición fin 0, y cada vez que
+              se añade un nuevo elemento se incrementa fin en 1. La extracción de un elemento se hace por el
+              extremo contrario, frente, y cada vez que se extrae un elemento avanza frente una posición. <br>
+              En la siguiente imagen se puede observar cómo avanza el puntero frente al extraer un elemento.
+
+            </p>
+
+            <div class=" text-center">
+            <img class="rounded encabezado-ejemplo " src="../img/Cola6.png" alt="">
+            </div>
+
+            <br>
+            <p>
+              El avance lineal de frente y fin tiene un grave problema, deja huecos por la izquierda del
+              array . Llega a ocurrir que fin alcanza el índice más alto del array, sin que puedan añadirse
+              nuevos elementos, y, sin embargo, hay posiciones libres a la izquierda de frente.
+            </p>
+
+            <font size=2>
+              <cite>
+                Aguilar, L.J. & Martinez, I.z. (2008). Madrid, España:
+                Estructura de daton en Java
+              </cite>
+            </font>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sección-Pag cta">
+    <div class="container">
+
+      <!--Centrado del div y anchura-->
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+
+          <h2 class="sección-título">
+            <span class="sección-título-superior">Para recordar</span>
+
+            <span class="sección-título-inferior">Las aplicaciones utilizan una cola para almacenar elementos en su
+              orden de aparición o concurrencia.
+            </span>
+
+          </h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <img class="rounded encabezado-ejemplo" src="../img/Cola2.png" alt="">
+      <div class="encabezado-ejemplo-content">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Ejemplo colas</span>
+            </h2>
+            <p> En esta imagen podemos obserbar un ejemplo cotidiano acerca de colas. <br>
+              Aquí podemos observar una fila de personas, cuyo objetivo es comprar un tiquete para una función de
+              teatro. <br>
+              A medida que alguien entra a la fila, este será el último en salir, ya que los que ingresaron primero
+              saldrán primero. <br>
+              El chico de buzo azul es ejemplo de la operación quitar, ya que fue el primero en entrar, por lo tanto
+              será el primero en salir. <br>
+              La chica de blusa amarilla es ejemplo de la operación insertar, ya que fue la más reciente en entrar a la
+              fila, por lo tanto será la última en salir.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sección-Pag cta">
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="second.html">Anterior nivel</a>
+            </li>
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="fourth.html">Siguiente nivel</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </section>
 
 

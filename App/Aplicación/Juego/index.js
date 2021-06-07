@@ -102,25 +102,26 @@ window.onload = function () {
 
     }
   ]
-  escogerPreguntaAleatoria()
+  LlamarPregunta()
 }
 
 let pregunta
 let posibles_respuestas
 btn_correspondiente = [
-  select_id("btn1"), select_id("btn2"),
-  select_id("btn3"), select_id("btn4")
+  select_id("btn1"),
+  select_id("btn2"),
+  select_id("btn3"),
+  select_id("btn4")
 ]
 npreguntas = []
 
 let preguntas_hechas = 0
 let preguntas_correctas = 0
 
-function escogerPreguntaAleatoria() {
 
+function LlamarPregunta() {
 
-  /* */
-  let n = Math.floor(Math.random() * base_preguntas.length)  // n = 0
+  let n = 0  // n = 0
   while (npreguntas.includes(n)) {
     n++
     if (n >= base_preguntas.length) {
@@ -133,10 +134,11 @@ function escogerPreguntaAleatoria() {
   npreguntas.push(n)
   preguntas_hechas++
 
-  escogerPregunta(n)
+  OrdenarPregunta(n)
 }
 
-function escogerPregunta(n) {
+
+function OrdenarPregunta(n) {
   /*Se lee la base de las preguntas */
 
   pregunta = base_preguntas[n]
@@ -167,14 +169,40 @@ function escogerPregunta(n) {
     }, 500);
   }
 
-  if (preguntas_hechas == 6) {
-    alert("Usted ha terminado el juego")
-    IntroLevel()
+
+
+  /*Si la cantidad de preguntas hechas es mayor que la longitud del array, termine el juego*/
+  if (preguntas_hechas > base_preguntas.length) {
+    Resultados()
   }
+
 }
-function IntroLevel() {
+
+
+
+function Resultados() {
+  let porcentaje = Math.round((preguntas_correctas / preguntas_hechas) * 100)
+
+
+  if (porcentaje <= 33) {
+    alert("Necesitas estudiar más \n" +
+      "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n" 
+      + "El porcetaje de acierto es: " + porcentaje + "%")
+  } else if (porcentaje > 33 && porcentaje <= 66) {
+    alert("Vamos, un poco más y puedes lograrlo \n"
+      + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+      + "El porcetaje de acierto es: " + porcentaje + "%")
+  } else if (porcentaje > 66) {
+    alert("Tienes un muy buen nivel \n"
+      + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+      + "El porcetaje de acierto es: " + porcentaje + "%")
+
+  }
+
   window.location.href = "../Paginas/first.html"/**Si se da click en el botón juego, te traslada a esta pagina */
 }
+
+
 
 function desordenarRespuestas(pregunta) {
   /*Se crea un array de las respuestas, para poder desordenarlas */
@@ -192,6 +220,12 @@ function desordenarRespuestas(pregunta) {
   select_id("btn3").innerHTML = posibles_respuestas[2]
   select_id("btn4").innerHTML = posibles_respuestas[3]
 }
+
+
+
+
+
+
 
 let suspender_botones = false
 
@@ -214,10 +248,11 @@ function oprimir_btn(i) {
       break
     }
   }
+  /*Tiempo de botones  */
   setTimeout(() => {
     reiniciar()
     suspender_botones = false
-  }, 3000);
+  }, 1000);
 }
 
 // let p = prompt("numero")
@@ -229,7 +264,7 @@ function reiniciar() {
   }
 
   //while (preguntas_hechas < 5) {
-  escogerPreguntaAleatoria()
+  LlamarPregunta()
 
   //}
 }

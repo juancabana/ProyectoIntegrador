@@ -10,8 +10,6 @@
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
 
-  <!--aquí se enlaza el archivo javascript-->
-  <script src="enlaces.js"></script>
 
   <!-- Aquí se enlaza bootstrap -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,63 +58,219 @@
     </div>
   </nav>
 
+  <br>
+  <br>
+  <br>
+
+
   <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
-      <img class="rounded encabezado-ejemplo" src="../img/Pila2.png" alt="">
-      <div class="encabezado-ejemplo-content">
+      <div class="encabezado-ejemplo-content ">
 
         <!--Centrado del div y anchura-->
         <div class="col-xl-9 mx-auto">
           <div class="bg-desvanencido rounded p-5">
+
             <h2 class="sección-título">
-              <span class="sección-título-superior">Ejemplo Pila</span>
+              <span class="sección-título-superior">Codificación</span>
             </h2>
+
             <p>
-              En este ejemplo podemos observar el comportamiento de una pila.
-              Por ejemplo, se puede crear una pila de libros, situando primero un libro de color azul claro,
-              encima de él uno rojo, sobre el rojo uno verde, sobre el verde uno naranja y sobre de todos estos
-              uno azul turquí,
-              de modo que la pila tendrá el libro azul turquí en la parte superior.<br>
+              Escribir un programa que cree una pila de enteros y realice operaciones de añadir datos a
+              la pila, quitar...
+              Se supone implementada la pila con el tipo primitivo int. El programa crea una pila de
+              números enteros. <br>
+              El usuario tiene la opción de... <br>
+              <li>Insertar nodo</li>
+              <li>Eliminar nodo</li>
+              <li>Verificar si la pila está vacía</li>
+              <li>Mostrar cual es el último número ingresado en la pila</li>
+              <li>Mostrar cuantos números tiene la pila</li>
+              <li>Vaciar la pila</li>
+              <li>Mostrar el contenido de la pila</li>
 
-              Si se quisiera quitar un libro (pop)... El que se eliminaría de la pila sería el azul turquí,
-              ya que este está en la cima de la pila.<br>
-
-              Ahora bien, si por el contrario se quiere insertar (push) un libro diferente, este quedaría en la cima,
-              y a la hora de hacer la operación "pop", el que se eliminaría sería este mismo, ya que es el último en
-              llegar.
             </p>
 
+            <br>
 
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Crear la clase nodo</span>
+            </h2>
+
+            <p>
+              Primero se crea la clase donde vamos a construir nuestros nodos <br>
+              Una lista enlazada se compone de una serie de nodos enlazados mediante referencias. En Java, se
+              declara una clase para contener las dos partes del nodo: dato y enlace. Por ejemplo, para una
+              lista enlazada de números enteros, la clase Nodo es: <br>
+              __________________________________________________________________________________________________________
+            </p>
+
+            <pre>
+package lista_tipo_pila;
+
+public class Nodo {
+    private int informacion;
+    private Nodo siguiente;
+    
+    public Nodo(int valor){
+        setInformacion(valor);
+        setSiguiente(null);
+    }
+
+    public int getInformacion() {
+        return informacion;
+    }
+
+    public void setInformacion(int informacion) {
+        this.informacion = informacion;
+    }
+
+    public Nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+}
+            </pre>
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <br>
+
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 4 de mayo). Curso Java Intermedio #33 | Listas tipo pila en Java (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=nsBxpVkPpYg
+              </cite>
+            </font>
 
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <br>
 
   <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
-      <div class="encabezado-ejemplo-content">
+      <div class="encabezado-ejemplo-content ">
 
         <!--Centrado del div y anchura-->
         <div class="col-xl-9 mx-auto">
           <div class="bg-desvanencido rounded p-5">
+
+
+
             <h2 class="sección-título">
-              <span class="sección-título-superior">Ejemplo Pila #2</span>
+              <span class="sección-título-superior">Crear el comportamiento de la pila (Clase "Pila")</span>
             </h2>
+
             <p>
-              En este ejemplo, se muestra la imagen de una pila según las diferentes operaciones posibles que se pueden
-              realizar en un programa
-              <br>
-              <img class="rounded encabezado-ejemplo" src="../img/Pila7.jpg" alt="">
+              Los métodos de la clase Pila se implementan fácilmente, teniendo en cuenta la característica
+              principal de esta estructura: inserciones y borrados se realizan por el mismo extremo, la cima
+              de la pila. <br>
+              Las operaciones Insertar() y Eliminar() añaden y eliminan, respectivamente, un elemento
+              de la pila; la operación "MostrarUltimoValorIngresado" permite a un cliente recuperar los datos de la cima
+              de la pila
+              sin quitar realmente el elemento de esta. <br>
+              Veremos cómo se crea el método para verificar si la pila está vacía "PilaVacia()". <br>
+              Además, crearemos métodos para saber el tamaño de nuestra pila, uno para vaciarla, y por último uno para
+              mostrar todos valores ingresados. <br>
+              A continuación, el código de la pila...
+
 
             </p>
 
+            <p>
+              __________________________________________________________________________________________________________
 
+            </p>
+
+            <pre>
+package lista_tipo_pila;
+
+
+import javax.swing.JOptionPane;
+
+public class Pila {
+    
+    private Nodo UltimoValorIngresado;
+    int tamano = 0;
+    String Lista = "";
+    
+    public Pila(){
+        UltimoValorIngresado = null;
+        tamano = 0;
+    }
+    
+    //Método para saber cuando la pila esta vacia
+    public boolean PilaVacia(){
+        return UltimoValorIngresado == null;
+    }
+    
+    //Método para insertar un nodo en la pila
+    public void Insertar(int nodo){
+        Nodo nuevo_nocdo = new Nodo(nodo);
+        nuevo_nocdo.setSiguiente(UltimoValorIngresado);
+        UltimoValorIngresado = nuevo_nocdo;
+        tamano++;
+    }        
+    
+    //Método para eliminar un nodo de la pila
+    public int Eliminar(){
+        int auxiliar = UltimoValorIngresado.getInformacion();
+        UltimoValorIngresado = UltimoValorIngresado.getSiguiente();
+        tamano--;
+        return auxiliar;
+    }
+    
+    //Método para conocer cual es el último valor ingresado
+    public int MostrarUltimoValorIngresado(){
+        return UltimoValorIngresado.getInformacion();
+    }
+    
+    //Método para conocer el tamaño de la Pila
+    public int TamanoPila(){
+        return tamano;
+    }
+    
+    //Método para vaciar la Pila
+    public void VaciarPila(){
+        while (!PilaVacia()) {
+            Eliminar ();
+        }
+    }
+    
+    //Método para mostrar el contenido de la pila
+    public void MostrarValores(){
+        Nodo recorrido = UltimoValorIngresado;
+        
+        while(recorrido != null){
+            Lista += recorrido.getInformacion() + "\n";
+            recorrido = recorrido.getSiguiente();
+        }
+        JOptionPane.showMessageDialog(null, Lista);
+        Lista = "";
+    }
+}
+            </pre>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+            
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 4 de mayo). Curso Java Intermedio #33 | Listas tipo pila en Java (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=nsBxpVkPpYg
+              </cite>
+            </font>
 
           </div>
         </div>
@@ -124,14 +278,213 @@
     </div>
   </section>
 
-  <section class="sección-Pag cta">
-    <div class="container">
-      <div class="bg-desvanencido rounded p-5">
-        <!---se ainea el botón  -->
-        <button onclick="SecondLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
+  <br>
 
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Ejecución del programa e invocación de los métodos</span>
+            </h2>
+
+            <p>
+              El último paso es invocar los métodos en un main, esto lo haremos mediante una ventana de dialogo, luego
+              le
+              indicaremos al usuario las opciones a elegir, dependiendo de la operación (método) a realizar. <br>
+              Usaremos una estructura Switch, para ir directamente al método que quiere el usuario. una vez dada la
+              opción, se ejecutará el método. <br>
+              Si el usuario ingresa un valor no valido, se lanzará una excepción. <br>
+              A continuación el código de la ejecución del programa...
+            </p>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <pre>
+package lista_tipo_pila;
+
+import javax.swing.JOptionPane;
+
+public class ClasePrincipal {
+
+    public static void main(String[] args) {
+
+        int opcion = 0, nodo = 0;
+        Pila pila = new Pila();
+
+        do {
+            try {
+
+                opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
+                        "Menú de Opciones\n\n"
+                        + "1. Insertar un nodo\n"
+                        + "2. Eliminar un nodo\n"
+                        + "3. ¿La Pila esta vacia?\n"
+                        + "4. ¿Cual es el último valor ingresado en la Pila?\n"
+                        + "5. ¿Cuantos numeros tiene la pila?\n"
+                        + "6. Vaciar Pila\n"
+                        + "7. Mostrar contenido de la Pila\n"
+                        + "8. Salir.\n\n"));
+                
+                switch (opcion) {
+                    case 1:
+                        nodo = Integer.parseInt(JOptionPane.showInputDialog(null, 
+                                "Porfavor ingresa el valor a guardar en el nodo"));
+                        pila.Insertar ( nodo);
+                        break;
+                        
+                    case 2:
+                        if(!pila.PilaVacia()){
+                            JOptionPane.showMessageDialog(null, "Se ha eliminado un nodo con el valor: "
+                             + pila.Eliminar ());
+                        }else {
+                            JOptionPane.showMessageDialog(null, "La pila esta vacia.");
+                        }
+                        break;
+                        
+                    case 3:
+                        if(pila.PilaVacia()){
+                            JOptionPane.showMessageDialog(null, "La pila esta vacia");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La pila NO vacia");
+                        }
+                        break;
+                        
+                    case 4:
+                        if(!pila.PilaVacia()){
+                            JOptionPane.showMessageDialog(null, "El último valor ingresado en la pila es: "
+                             + pila.MostrarUltimoValorIngresado());
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La pila esta vacia");
+                        }
+                        break;
+                        
+                    case 5:
+                        JOptionPane.showMessageDialog(null, "La pila contiene " + pila.TamanoPila() + " nodos.");
+                        break;
+                        
+                    case 6:
+                        if(!pila.PilaVacia()){
+                            pila.VaciarPila();
+                            JOptionPane.showMessageDialog(null, "Se ha vaciado la pila correctamente");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La pila esta vacia");
+                        }
+                        break;
+                        
+                    case 7:
+                        pila.MostrarValores();
+                        break;
+                        
+                    case 8:
+                        opcion = 8;
+                        break;
+                        
+                    default:
+                        JOptionPane.showMessageDialog(null, "Opción incorrecta, vuelve intentar nuevamente.");
+                        break;
+                }
+                
+
+            } catch (NumberFormatException e) {
+
+            }
+        } while (opcion != 8);
+    }
+}
+            </pre>
+
+            <br>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 4 de mayo). Curso Java Intermedio #33 | Listas tipo pila en Java (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=nsBxpVkPpYg
+              </cite>
+            </font>
+
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="sección-Pag cta">
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="first.html">Anterior nivel</a>
+            </li>
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="third.html">Siguiente nivel</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </section>
 
   <footer class="footer texto-piePag text-center py-5">

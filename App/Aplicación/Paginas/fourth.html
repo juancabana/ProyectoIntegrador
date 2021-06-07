@@ -10,8 +10,6 @@
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
 
-  <!--aquí se enlaza el archivo javascript-->
-  <script src="enlaces.js"></script>
 
   <!-- Aquí se enlaza bootstrap -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,40 +58,395 @@
     </div>
   </nav>
 
+
+  <br>
+  <br>
+  <br>
+
+
   <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
-      <img class="rounded encabezado-ejemplo" src="../img/Cola2.png" alt="">
-      <div class="encabezado-ejemplo-content">
+      <div class="encabezado-ejemplo-content ">
 
         <!--Centrado del div y anchura-->
         <div class="col-xl-9 mx-auto">
           <div class="bg-desvanencido rounded p-5">
+
             <h2 class="sección-título">
-              <span class="sección-título-superior">Ejemplo colas</span>
+              <span class="sección-título-superior">Codificación</span>
             </h2>
-            <p>cotidianos personas comprando en un supermercado, los abuelitos esperando en las filas por
-              el pago de su pensión o ayuda por el estado, una taquilla de ventas de boletos de algún partido o de
-              alguna función,
-              personas comprando en un supermercado. Este movimiento está representado en la cola por la función
-              pop o desencolar. Es decir, cada vez que llega una persona se agrega a la cola y así sucesivamente,
-              y los primeros que llegaron son los primeros en salir, entran por un extremo y salen por otro.</p>
+
+            <p>
+              Escribir un programa que cree una cola de enteros y realice operaciones de añadir datos a
+              la pila, quitar los elementos y mostrar el contenido de la cola. <br>
+              Se supone implementada la cola con el tipo primitivo int. El programa crea una cola de
+              números enteros. <br>
+              El usuario tiene la opción de... <br>
+              <li>Insertar nodo</li>
+              <li>Eliminar nodo</li>
+              <li>Mostrar el contenido de la pila</li>
+
+            </p>
+
+            <br>
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Crear la clase nodo</span>
+            </h2>
+
+            <p>
+              Primero se crea la clase donde vamos a construir nuestros nodos <br>
+              Una lista enlazada se compone de una serie de nodos enlazados mediante referencias. En Java, se
+              declara una clase para contener las dos partes del nodo: dato y enlace. Por ejemplo, para una
+              lista enlazada de números enteros, la clase Nodo es: <br>
+              __________________________________________________________________________________________________________
+            </p>
+
+            <pre>
+              package clases;
+
+              public class Nodo {
+                  int informacion;
+                  Nodo siguiente;
+              }              
+            </pre>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <p>
+              Como podemos ver no necesitamos constructores ni Getter ni Setter
+            </p>
+
+            <br>
+
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 10 de mayo). Curso Java Intermedio #35 | Listas tipo cola en Java
+                (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=WSNHX1Qnjvg
+              </cite>
+            </font>
 
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
 
-  <section class="sección-Pag cta">
-    <div class="container">
-      <div class="bg-desvanencido rounded p-5">
-        <!---se ainea el botón  -->
-        <button onclick="play()" class="button" style="display: block; margin: 0 auto;">Juguemos</button>
+  <br>
 
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Crear el comportamiento de la pila (Clase "Cola")</span>
+            </h2>
+
+            <p>
+              El método "ColaVacia()" devuelve "true" si esta no tiene ningún elemento, y devuelve "falso" de lo
+              contrario<br>
+              En el metodo "Insertar()" se crea un nuevo objeto tipo "Nodo" y se le agrega valores nulos a sus
+              atributos,
+              todo esto para poder empezar a construir el nodo a agregar. Luego se verifica si la pila está vacía, si lo
+              está, se agrega el elemento al inicio de la pila, pero si no está vacía, agrega el elemento al final de
+              esta.<br>
+              En el método "Extraer()", se verifica que la pila no esté vacía, si está vacía se retorna una excepción; si
+              no está vacía, se hace otra verificación, si la cola solo tiene un elemento, se le da valor "null" al
+              inicio de la cola y al final, ya que el elemento está en este mismo lugar, pero si tiene más de un
+              elemento, el inicio de la cola va a ser el valor del siguiente elemento, de esta manera se extrae el
+              elemento. <br>
+              En el método "MostrarContenido()" se hace un recorrido por la Cola, y se imprime a medida que se recorra
+              esta.
+
+              A continuación, el código de la cola...
+
+            </p>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <pre>
+package clases;
+import javax.swing.JOptionPane;
+         
+public class Cola {
+    private Nodo inicioCola, finalCola;
+    String Cola = "";
+             
+    public Cola(){
+        inicioCola = null;
+        finalCola = null;
+    }
+             
+    //Método para saber si la cola esta vacia
+    public boolean ColaVacia(){
+        if (inicioCola == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+               
+    //Método para insertar a la cola
+    public void Insertar(int informacion){
+        Nodo nuevo_nodo = new Nodo();
+        nuevo_nodo.informacion = informacion;
+        nuevo_nodo.siguiente = null;
+                 
+        if (ColaVacia()) {
+            inicioCola = nuevo_nodo;
+            finalCola = nuevo_nodo;
+        } else {
+            finalCola.siguiente = nuevo_nodo;
+            finalCola = nuevo_nodo;
+        }
+    }
+                
+    //Método para extraer de la cola
+    public int Extraer(){
+        if (!ColaVacia()) {
+            int informacion = inicioCola.informacion;
+                    
+            if (inicioCola == finalCola) {
+                inicioCola = null;
+                finalCola = null;
+            } else {
+                inicioCola = inicioCola.siguiente;
+            }
+            return informacion;
+        } else {
+            return Integer.MAX_VALUE;
+        }
+    }
+                
+    //Método para mostrar el contenido de la cola
+    public void MostrarContenido(){
+        Nodo recorrido = inicioCola;
+        String ColaInvertida = "";
+                 
+        while(recorrido != null){
+            Cola += recorrido.informacion + " ";
+            recorrido = recorrido.siguiente;
+        }
+                 
+        String cadena [] = Cola.split(" ");
+                 
+                    
+        for (int i = cadena.length - 1; i >= 0; i--) {
+            ColaInvertida += " " +cadena[i];                    
+        }
+                    
+        JOptionPane.showMessageDialog(null, ColaInvertida);
+        Cola = "";
+    }
+            
+            
+}
+            
+              </pre>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 10 de mayo). Curso Java Intermedio #35 | Listas tipo cola en Java
+                (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=WSNHX1Qnjvg
+              </cite>
+            </font>
+
+
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content ">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Ejecución del programa e invocación de los métodos</span>
+            </h2>
+
+            <p>
+              El último paso es invocar los métodos en un main, esto lo haremos mediante una ventana de dialogo, luego
+              le
+              indicaremos al usuario las opciones a elegir, dependiendo de la operación (método) a realizar. <br>
+              Usaremos una estructura Switch, para ir directamente al método que quiere el usuario. una vez dada la
+              opción, se ejecutará el método. <br>
+              Si el usuario ingresa un valor no valido, se lanzará una excepción. <br>
+              A continuación el código de la ejecución del programa...
+            </p>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+            <pre>
+package clases;
+
+import javax.swing.JOptionPane;
+              
+public class ClasePrincipal {
+              
+    public static void main(String[] args) {
+              
+        int opcion = 0, nodo_informacion = 0;
+        Cola cola = new Cola();
+              
+        do {
+              
+            try {
+              
+                opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
+                       "Menú de Opciones\n\n"
+                        + "1. Insertar un nodo\n"
+                        + "2. Extraer un nodo\n"
+                        + "3. Mostrar contenido de la Cola\n"
+                        + "4. Salir.\n\n"));
+              
+                switch (opcion) {
+                    case 1:
+                        nodo_informacion = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                "Porfavor ingresa el valor a guardar en el nodo."));
+                        cola.Insertar(nodo_informacion);
+                        break;
+                    case 2:
+                        if (!cola.ColaVacia()) {
+                            JOptionPane.showMessageDialog(null, "Se extrajo un nodo con el valor: " 
+                                    + cola.Extraer());
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La cola esta vacía");
+                        }
+                        break;
+                    case 3:
+                        cola.MostrarContenido();
+                        break;
+                    case 4:
+                        opcion = 4;
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Opción no dispobible.");
+                        break;
+                }
+              
+            } catch (NumberFormatException e) {
+            }
+              
+        } while (opcion != 4);
+    }
+}
+              </pre>
+
+            <br>
+
+            <p>
+              __________________________________________________________________________________________________________
+
+            </p>
+
+
+            <font size=2>
+              <cite>
+                La Geekipedia De Ernesto. (2018, 10 de mayo). Curso Java Intermedio #35 | Listas tipo cola en Java
+                (Estructura de datos) [Video].
+                YouTube. https://www.youtube.com/watch?v=WSNHX1Qnjvg
+              </cite>
+            </font>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="sección-Pag cta">
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="third.html">Anterior nivel</a>
+            </li>
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="../Juego/index.html">Examen</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </section>
 
 

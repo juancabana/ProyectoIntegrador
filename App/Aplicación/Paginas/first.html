@@ -10,8 +10,6 @@
   <!--aquí invoco el logo de la UNAC para que aparezca como favicon-->
   <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
 
-  <!--aquí se enlaza el archivo javascript-->
-  <script src="enlaces.js"></script>
 
   <!-- Aquí se importa bootstrap -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +24,7 @@
   <link href="business-casual.min.css" rel="stylesheet">
 
 </head>
+
 
 <body>
 
@@ -72,20 +71,26 @@
             <span class="sección-título-inferior">¿Qué son?</span>
           </h2>
 
-          <p>Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por
-            un único lugar
-            de la pila, este lugar es la cima. Los elementos se añaden (apilar) o se quitan (desapilar) de la pila sólo
-            por su parte superior (cima).<br>
-            A estas estructuras se les llama también estructuras "LIFO" (Del ingles, Last-in, first-out, último en
-            entrar primero en salir)
-            ASÍ es el comportamiento de una pila, como la de una pila de platos, una pila de libros, etc.
-            Es decir, si traemos el concepto de una pila a la vida real, los libros serían un buen ejemplo.<br>
-            Si se pone
-            sobre la mesa un libro de
-            matemáticas, y sobre el se pone uno de ingles, y sobre este se pone uno de religión... El primer libro que
-            quitaríamos de la pila,
-            es el de religión, ya que está en la cima de esta.
+          <p>Una pila (stack) es una colección ordenada de elementos a los cuales sólo se puede acceder por un único
+            lugar de la pila, este lugar es la cima. Los elementos se añaden (apilar) o se quitan (desapilar) de la pila
+            sólo por su parte superior (cima).<br>
+            A estas estructuras se les llama también estructuras "LIFO" (Del inglés, Last-in, first-out, último en
+            entrar primero en salir) ASÍ es el comportamiento de una pila, como la de una pila de platos, una pila de
+            libros, etc. Es decir, si traemos el concepto de una pila a la vida real, los libros serían un buen
+            ejemplo.<br>
+            Si se pone sobre la mesa un libro de matemáticas, y sobre él se pone uno de inglés, y sobre este se pone uno
+            de religión... El primer libro que quitaríamos de la pila es el de religión, ya que está en la cima de
+            esta.<br>
+
+            <font size=2>
+              <cite>
+                Diversión con estructura de datos (18/11/2015):
+                https://aprenderestructuradedatos.blogspot.com/2015/11/prueba_18.html
+              </cite>
+            </font>
+
           </p>
+
 
           <br>
 
@@ -158,6 +163,13 @@
               Para evitar estas situaciones se diseñan métodos que comprueban si la pila está llena o vacía.
             </p>
 
+            <font size=2>
+              <cite>
+                Aguilar, L.J. & Martinez, I.z. (2008). Madrid, España:
+                Estructura de daton en Java
+              </cite>
+            </font>
+
           </div>
         </div>
       </div>
@@ -166,6 +178,7 @@
 
 
   <br>
+
 
   <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
@@ -185,7 +198,7 @@
               tamaño fijo.<br>
               En otras palabras, podría sr útil en algunas ocasiones, pero la idea es ver, que podamos crear una pila
               sin necesidad de estar preocupado por el tamaño.
-              La clase PilaLineal, con esta representación, necesita un array y una variable numérica, cima, que apunte
+              La clase "PilaLineal", con esta representación, necesita un array y una variable numérica, cima, que apunte
               al último elemento colocado en la pila. Al utilizar un array es necesario tener en cuenta que el tamaño de
               la pila no puede exceder el número de elementos del array, y la condición pila llena será significativa
               para el diseño.<br>
@@ -238,13 +251,20 @@
               <img class="encabezado-ejemplo mb-lg-1 rounded" src="../img/Pila6.png" alt="">
             </p>
 
+            <font size=2>
+              <cite>
+                Aguilar, L.J. & Martinez, I.z. (2008). Madrid, España:
+                Estructura de daton en Java
+              </cite>
+            </font>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+
   <section class="sección-Pag cta">
     <div class="container">
 
@@ -272,75 +292,68 @@
 
   <section class="sección-Pag encabezado-ejemplo">
     <div class="container">
-      <div class="encabezado-ejemplo-content ">
+      <img class="rounded encabezado-ejemplo" src="../img/Pila2.png" alt="">
+      <div class="encabezado-ejemplo-content">
 
         <!--Centrado del div y anchura-->
         <div class="col-xl-9 mx-auto">
           <div class="bg-desvanencido rounded p-5">
-
             <h2 class="sección-título">
-              <span class="sección-título-superior">Codificación</span>
+              <span class="sección-título-superior">Ejemplo Pila</span>
             </h2>
-
             <p>
-              Escribir un programa que cree una pila de enteros y realice operaciones de añadir datos a
-              la pila, quitar...
-              Se supone implementada la pila con el tipo primitivo int. El programa crea una pila de
-              números enteros. <br>
-              El ususario tiene la opción de... <br>
-              <li>Insertar nodo</li>
-              <li>Eliminar nodo</li>
-              <li>Verificar si la pila está vacia</li>
-              <li>Mostrar cual es el ultimo numero ingresado en la pila</li>
-              <li>Mostrar cuantos numeros tiene la pila</li>
-              <li>Vaciar la pila</li>
-              <li>Mostrar el contenido de la pila</li>
+              En este ejemplo podemos observar el comportamiento de una pila.
+              Por ejemplo, se puede crear una pila de libros, situando primero un libro de color azul claro,
+              encima de él uno rojo, sobre el rojo uno verde, sobre el verde uno naranja y sobre de todos estos
+              uno azul turquí,
+              de modo que la pila tendrá el libro azul turquí en la parte superior.<br>
+
+              Si se quisiera quitar un libro (pop)... El que se eliminaría de la pila sería el azul turquí,
+              ya que este está en la cima de la pila.<br>
+
+              Ahora bien, si por el contrario se quiere insertar (push) un libro diferente, este quedaría en la cima,
+              y a la hora de hacer la operación "pop", el que se eliminaría sería este mismo, ya que es el último en
+              llegar.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+
+
+  <section class="sección-Pag encabezado-ejemplo">
+    <div class="container">
+      <div class="encabezado-ejemplo-content">
+
+        <!--Centrado del div y anchura-->
+        <div class="col-xl-9 mx-auto">
+          <div class="bg-desvanencido rounded p-5">
+            <h2 class="sección-título">
+              <span class="sección-título-superior">Ejemplo Pila #2</span>
+            </h2>
+            <p>
+              En este ejemplo, se muestra la imagen de una pila según las diferentes operaciones posibles que se pueden
+              realizar en un programa
+              <br>
+
+            <div class=" text-center">
+              <img class="rounded encabezado-ejemplo " src="../img/Pila7.png" alt="">
+            </div>
 
             </p>
 
-            <br>
+            <font size=2>
+              <cite>
+                Aguilar, L.J. & Martinez, I.z. (2008). Madrid, España:
+                Estructura de daton en Java
+              </cite>
+            </font>
 
-            <p>
-              Primero se crea la clase donde vamos a construir nuestros nodos <br>
-              Una lista enlazada se compone de una serie de nodos enlazados mediante referencias. En Java, se
-              declara una clase para contener las dos partes del nodo: dato y enlace. Por ejemplo, para una
-              lista enlazada de números enteros, la clase Nodo es: <br>
-              __________________________________________________________________________________________________________
-            </p>
-
-            <pre>
-package lista_tipo_pila;
-
-public class Nodo {
-    private int informacion;
-    private Nodo siguiente;
-    
-    public Nodo(int valor){
-        setInformacion(valor);
-        setSiguiente(null);
-    }
-
-    public int getInformacion() {
-        return informacion;
-    }
-
-    public void setInformacion(int informacion) {
-        this.informacion = informacion;
-    }
-
-    public Nodo getSiguiente() {
-        return siguiente;
-    }
-
-    public void setSiguiente(Nodo siguiente) {
-        this.siguiente = siguiente;
-    }
-}
-            </pre>
-            <p>
-              __________________________________________________________________________________________________________
-
-            </p>
           </div>
         </div>
       </div>
@@ -349,12 +362,24 @@ public class Nodo {
 
 
   <section class="sección-Pag cta">
-    <div class="container">
-      <div class="bg-desvanencido rounded p-5">
-        <!---se ainea el botón  -->
-        <button onclick="FirstLevel()" class="button" style="display: block; margin: 0 auto;">Siguiente</button>
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Intro.html">Introduccion</a>
+            </li>
+
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="second.html">Siguiente nivel</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </section>
 
 

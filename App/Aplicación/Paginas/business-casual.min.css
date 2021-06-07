@@ -5,13 +5,13 @@ body{
     background-size:cover
    }
     /*fuente del hipertexto del pie de página, color, margen, etc.*/
-    h2{font-family:Raleway}p{line-height:1.75}    
+    h2{font-family:Raleway}p,cite{line-height:1.75}    
    .texto-piePag{color:rgb(255, 255, 255)}/*Se define el color de la letra del pie de pagina*/
    .encabezadoPag{margin-top:5rem;margin-bottom:5rem;text-transform:uppercase;line-height:1;font-family:Raleway}
    .encabezadoPag .encabezadoPag-superior{display:block;font-size:2rem;font-weight:800}
     /*Margen máximo y mínimo de las secciones de las páginas*/
    .sección-Pag{margin-top:5rem;margin-bottom:5rem}
-   .sección-PagF{margin-top:5rem;margin-bottom:30rem}
+   .sección-PagF{margin-top:5rem;margin-bottom:35rem}
    /*Estilo de los encabezados de los Nav*/
    .sección-título{text-transform:uppercase}.sección-título /*Se transforma todo a Mayuscula*/
    .sección-título-superior{display:block;font-size:1rem;font-weight:800}
@@ -21,12 +21,12 @@ body{
     /*Color del mainNav, letras, etc*/
    #mainNav{background-color:rgba(50, 146, 138, 0.9);font-family:Raleway;font-weight:800}
     /*color del texto activo*/
-   #mainNav  .nav-item.active .nav-link{color:#00ffbf}@media (min-width:992px)
+   #mainNav  .nav-item.active .nav-link{color:#00ffd5}@media (min-width:992px)
     {#mainNav .nav-item {font-size:.9rem}
-    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgb(48, 216, 188)}
+    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgb(179, 247, 225)}
     /*color mientras el mouse está encima*/
     .navbar-dark .navbar-nav .nav-link {
-        color: rgb(223, 255, 251);
+        color: rgb(255, 255, 255);
     }
     #mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#ffffff}}
    .intro{position:relative}@media (min-width:992px){.intro .intro-img{width:75%;float:right}
@@ -34,11 +34,14 @@ body{
    .intro .intro-text .intro-button{width:100%;left:0;position:absolute;bottom:-2rem}}@media (min-width:1200px){
        .intro .intro-text{width:45%}}
        /*Color del "Para recordar"*/
-   .cta{padding-top:2rem;padding-bottom:2rem;background-color:rgba(30, 197, 141, 0.856)}
+   .cta{padding-top:2rem;padding-bottom:2rem;background-color:rgba(41, 255, 226, 0.856)}
    .cta .cta-inner{position:relative;padding:2rem;margin:.2rem;background-color:rgba(255, 255, 255, 0.863)}
    .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;
+    /*Estilos de los botones del footer*/
+    
       /*Ancho del borde, poscición de los parrafos que acompañan a los ejemplos, subtitulos, etc.*/
-      z-index:-1}@media (min-width:992px){
+      z-index:-1}
+      @media (min-width:992px){
       .encabezado-ejemplo .encabezado-ejemplo-img{position:relative;z-index:0}
       .encabezado-ejemplo .encabezado-ejemplo-content{
        margin-top:-5rem;
@@ -51,19 +54,3 @@ body{
    .footer strong{font-size:1.2rem}.footer{background-color:rgba(34, 126, 118, 0.76)}
     /*Color del texto principal*/
    .texto-principal{color:#3ec093!important}
-  .button{
-    padding: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #1d4b3b;
-    background-color: #2a8f8691;
-    border-radius: 6px;
-    border-color: #1884ba00;
-   margin-top:1.5rem;margin-bottom:1rem;text-transform:uppercase
-
-
-  }
-  .button:hover{
-   color: #ffffffd3;
-   background-color: rgba(34, 126, 118, 0.76);
-}
