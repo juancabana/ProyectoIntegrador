@@ -1,9 +1,9 @@
 window.onload = function () {
   base_preguntas = [
     {
-      "categoria": "Pila, Cola",
-      "pregunta": "¿Qué estructura de datos (se permite marcar más de una respuesta) utilizaría     para simular el comportamiento de clientes en un sistema de cajas de un supermercado?",
-      "respuesta": "Cola incluyendo la operación borrar.",
+      "categoria": "Mixto",
+      "pregunta": "¿Qué estructura de datos se debería utilizar para simular el comportamiento de clientes en un sistema de cajas de un supermercado?",
+      "respuesta": "Colas",
       "incorrecta1": "Pila con ordenación",
       "incorrecta2": "Pila sin Prioridad",
       "incorrecta3": "Objetos",
@@ -16,7 +16,7 @@ window.onload = function () {
       "respuesta": "En una pila los elementos se añaden y eliminan solo por un extremo: la cima",
       "incorrecta1": "En una pila solo puedes tener elementos limitados",
       "incorrecta2": "La pila solo guarda valores enteros, nada de letras",
-      "incorrecta3": "La pila es tan eficiente para aplicarla a nuestra vida cotidiana",
+      "incorrecta3": "La pila se puede implementar en bancos",
     },
     {
       "categoria": "Cola",
@@ -29,9 +29,9 @@ window.onload = function () {
     {
       "categoria": "Pila",
       "pregunta": "Uno de los principales usos de las estructuras de datos tipo pila es:",
-      "respuesta": "Tipo Tratamiento de expresiones matemáticas",
-      "incorrecta1": "Control de problemas matemáticos ",
-      "incorrecta2": "Almacenar datos de cualquier",
+      "respuesta": "Tratamiento de expresiones matemáticas",
+      "incorrecta1": "Descontrol de problemas matemáticos ",
+      "incorrecta2": "Almacenar datos sin poder eliminarlos",
       "incorrecta3": "Ingresar datos y conservar el orden de llegada",
     },
     {
@@ -61,7 +61,7 @@ window.onload = function () {
     },
     {
       "categoria": "Pila & Cola",
-      "pregunta": "Si tuvieras que elegir un procedimiento para un banco, ¿Qué opción tomarías?",
+      "pregunta": "Si tuvieras que elegir una estructura a inplementar en el procedimiento para un banco, ¿Qué opción tomarías?",
       "respuesta": "Cola",
       "incorrecta1": "Pila",
       "incorrecta2": "null",
@@ -77,20 +77,11 @@ window.onload = function () {
     },
     {
       "categoria": "Pila",
-      "pregunta": "¿Cuándo una pila no tiene elementos como podría denominarse?",
+      "pregunta": "¿Cuando una pila no tiene elementos como podría denominarse?",
       "respuesta": " Pila vacía",
       "incorrecta1": "Pila llena",
       "incorrecta2": "Pila sin elementos",
-      "incorrecta3": "Una pila Nula",
-    },
-    {
-      "categoria": "Pila",
-      "pregunta": "¿Qué debe proporcionar una pila con sus operadores",
-      "respuesta": " Una Pila Vacía y llena",
-      "incorrecta1": "Una Pila llena y una Ordenada",
-      "incorrecta2": "Una Pila con múltiples respuestas",
-      "incorrecta3": "Una pila Vacía con un mensaje diciendo Nulo",
-
+      "incorrecta3": "Una pila por llenar",
     },
     {
       "categoria": "Cola",
@@ -100,10 +91,122 @@ window.onload = function () {
       "incorrecta2": "El servicio de atención a clientes en un ejemplo claro de una pila",
       "incorrecta3": "Una cola es una estructura de datos cuyos elementos mantienen un cierto preOrden",
 
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿Qué son las pilas y colas?",
+      "respuesta": "Estructuras de datos",
+      "incorrecta1": "Estructuras solo de enteros",
+      "incorrecta2": "Estructuras de enteros y objetos",
+      "incorrecta3": "Estructuras solo de strings",
+
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "Las estructuras de datos nos permiten tener una mejor gestión de...",
+      "respuesta": "Información",
+      "incorrecta1": "Números enteros",
+      "incorrecta2": "Objetos",
+      "incorrecta3": "Riesgo",
+
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿En cual de las estructuras (Pilas y colas), es necesario modificar directamente el programa para insertar o eliminar elementos?",
+      "respuesta": "Ningúna",
+      "incorrecta1": "Pilas",
+      "incorrecta2": "Colas",
+      "incorrecta3": "Pilas y colas",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "Una pila es una colección ordenada de...",
+      "respuesta": "Elementos",
+      "incorrecta1": "Enteros",
+      "incorrecta2": "Strings",
+      "incorrecta3": "Numeros largos",
+
+    },
+    {
+      "categoria": "Colas",
+      "pregunta": "Una Cola es una colección ordenada de...",
+      "respuesta": "Elementos",
+      "incorrecta1": "Enteros",
+      "incorrecta2": "Strings",
+      "incorrecta3": "Numeros largos",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "Las siglas 'LIFO' significan",
+      "respuesta": "Last-In, First-Out",
+      "incorrecta1": "Last-Integer, First-Object",
+      "incorrecta2": "Last-Int, First-Out",
+      "incorrecta3": "Last-In, First-Output",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "Las pilas cuentan con dos operaciones imprescindibles...",
+      "respuesta": "Apilar - Desapilar",
+      "incorrecta1": "Apilar - Insertar",
+      "incorrecta2": "Insertar - Mostrar",
+      "incorrecta3": "Revelar - Desapilar",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "En la operación 'Crear' se hace lo siguiente:",
+      "respuesta": "Se crea la pila vacía",
+      "incorrecta1": "Se crea el primer elemento de la pila",
+      "incorrecta2": "Se vacía la pila",
+      "incorrecta3": "Se insertan todos los elementos de la pila",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "En la operación 'Apilar' se hace lo siguiente:",
+      "respuesta": "Se añade un elemento a la pila",
+      "incorrecta1": "Se ordenan los elementos de la pila",
+      "incorrecta2": "Se vacía la pila",
+      "incorrecta3": "Se insertan todos los elementos de la pila de una vez",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "En la operación 'Desapilar' se hace lo siguiente:",
+      "respuesta": "Se extrae un elemento de la pila (cima)",
+      "incorrecta1": "Se eliminan todos los elementos de la pila",
+      "incorrecta2": "Se vacía la pila, menos el último",
+      "incorrecta3": "Se elimina el primer elemento y el último",
+
+    },
+    {
+      "categoria": "Colas",
+      "pregunta": "Las siglas 'FIFO' significan",
+      "respuesta": "First-In, First-Out",
+      "incorrecta1": "First-Ingeniery, First-Out",
+      "incorrecta2": "First-Index, First-Out",
+      "incorrecta3": "First-In, First-Output",
+
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "Si se implementa una pila con arrays... ¿Se puede aumentar i decrecer la longitud de esta?",
+      "respuesta": "No, ya que el array tiene longitud fija",
+      "incorrecta1": "Si, ya que el vector tiene longitud infija",
+      "incorrecta2": "No, ya que el vector tiene longitud infija",
+      "incorrecta3": "Si, ya que el array tiene longitud fija",
+
     }
+
   ]
   LlamarPregunta()
 }
+
+
+
 
 let pregunta
 let posibles_respuestas
@@ -181,21 +284,28 @@ function OrdenarPregunta(n) {
 
 
 function Resultados() {
+
   let porcentaje = Math.round((preguntas_correctas / preguntas_hechas) * 100)
 
 
   if (porcentaje <= 33) {
+
     alert("Necesitas estudiar más \n" +
-      "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n" 
+      "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
       + "El porcetaje de acierto es: " + porcentaje + "%")
+
   } else if (porcentaje > 33 && porcentaje <= 66) {
-    alert("Vamos, un poco más y puedes lograrlo \n"
+
+    alert("Vamos, puedes llegar más alto \n"
       + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
       + "El porcetaje de acierto es: " + porcentaje + "%")
+
   } else if (porcentaje > 66) {
-    alert("Tienes un muy buen nivel \n"
+    
+    alert("Tienes un muy buen nivel, felicidades \n"
       + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
       + "El porcetaje de acierto es: " + porcentaje + "%")
+
 
   }
 
@@ -252,7 +362,7 @@ function oprimir_btn(i) {
   setTimeout(() => {
     reiniciar()
     suspender_botones = false
-  }, 1000);
+  }, 100);
 }
 
 // let p = prompt("numero")
