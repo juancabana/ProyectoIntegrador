@@ -44,6 +44,16 @@ window.onload = function () {
     },
     {
       "categoria": "Pila",
+      "pregunta": "¿Qué tipo de datos se pueden almacenar en esta pila?",
+      "respuesta": "Enteros",
+      "incorrecta1": "Enteros largos",
+      "incorrecta2": "String",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/Y3yKpB3/Pila8.png",
+      "objectFit": "contain"
+    },
+    {
+      "categoria": "Pila",
       "pregunta": " La representación en memoria de las estructuras de datos tipo pila se lleva a cabo por medio de: ",
       "respuesta": "listas enlazadas y arreglos ",
       "incorrecta1": "Arrays",
@@ -57,7 +67,7 @@ window.onload = function () {
       "incorrecta1": " Eliminación ",
       "incorrecta2": " Inserción ",
       "incorrecta3": " Visualización ",
-
+      
     },
     {
       "categoria": "Pila & Cola",
@@ -74,6 +84,16 @@ window.onload = function () {
       "incorrecta1": " FIFO ",
       "incorrecta2": " FIFO/LIFO ",
       "incorrecta3": " LIFO/LIFO ",
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
+      "respuesta": "Colas",
+      "incorrecta1": "Pila con ordenación",
+      "incorrecta2": "Pila y colas",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/fpB9hTt/Cola1.png",
+      "objectFit": "contain"
     },
     {
       "categoria": "Pila",
@@ -120,6 +140,16 @@ window.onload = function () {
 
     },
     {
+      "categoria": "Mixto",
+      "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
+      "respuesta": "Colas",
+      "incorrecta1": "Pila con ordenación",
+      "incorrecta2": "Pila y colas",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/KNzyrZ6/Cola2.png",
+      "objectFit": "contain"
+    },
+    {
       "categoria": "Pilas",
       "pregunta": "Una pila es una colección ordenada de...",
       "respuesta": "Elementos",
@@ -135,7 +165,7 @@ window.onload = function () {
       "incorrecta1": "Enteros",
       "incorrecta2": "Strings",
       "incorrecta3": "Numeros largos",
-
+      
     },
     {
       "categoria": "Pilas",
@@ -144,7 +174,17 @@ window.onload = function () {
       "incorrecta1": "Last-Integer, First-Object",
       "incorrecta2": "Last-Int, First-Out",
       "incorrecta3": "Last-In, First-Output",
-
+      
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
+      "respuesta": "Pilas",
+      "incorrecta1": "Colas con ordenación",
+      "incorrecta2": "Pila y colas",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/C7g6YZd/Pila2.png",
+      "objectFit": "contain"
     },
     {
       "categoria": "Pilas",
@@ -153,7 +193,7 @@ window.onload = function () {
       "incorrecta1": "Apilar - Insertar",
       "incorrecta2": "Insertar - Mostrar",
       "incorrecta3": "Revelar - Desapilar",
-
+      
     },
     {
       "categoria": "Pilas",
@@ -162,7 +202,17 @@ window.onload = function () {
       "incorrecta1": "Se crea el primer elemento de la pila",
       "incorrecta2": "Se vacía la pila",
       "incorrecta3": "Se insertan todos los elementos de la pila",
-
+      
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
+      "respuesta": "Pilas",
+      "incorrecta1": "Colas con ordenación",
+      "incorrecta2": "Pila y colas",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/hRrkyxY/Pila5.png",
+      "objectFit": "contain"
     },
     {
       "categoria": "Pilas",
@@ -171,7 +221,7 @@ window.onload = function () {
       "incorrecta1": "Se ordenan los elementos de la pila",
       "incorrecta2": "Se vacía la pila",
       "incorrecta3": "Se insertan todos los elementos de la pila de una vez",
-
+      
     },
     {
       "categoria": "Pilas",
@@ -180,7 +230,7 @@ window.onload = function () {
       "incorrecta1": "Se eliminan todos los elementos de la pila",
       "incorrecta2": "Se vacía la pila, menos el último",
       "incorrecta3": "Se elimina el primer elemento y el último",
-
+      
     },
     {
       "categoria": "Colas",
@@ -189,18 +239,47 @@ window.onload = function () {
       "incorrecta1": "First-Ingeniery, First-Out",
       "incorrecta2": "First-Index, First-Out",
       "incorrecta3": "First-In, First-Output",
-
+      
+    },
+    {
+      "categoria": "Mixto",
+      "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
+      "respuesta": "Pilas",
+      "incorrecta1": "Colas con ordenación",
+      "incorrecta2": "Pila y colas",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/HKBKLc2/Pila1.png",
+      "objectFit": "contain"
     },
     {
       "categoria": "Pilas",
-      "pregunta": "Si se implementa una pila con arrays... ¿Se puede aumentar i decrecer la longitud de esta?",
+      "pregunta": "Si se implementa una pila con arrays... ¿Se puede aumentar o decrecer la longitud de esta?",
       "respuesta": "No, ya que el array tiene longitud fija",
       "incorrecta1": "Si, ya que el vector tiene longitud infija",
       "incorrecta2": "No, ya que el vector tiene longitud infija",
       "incorrecta3": "Si, ya que el array tiene longitud fija",
-
+      
+    },
+    {
+      "categoria": "Pilas",
+      "pregunta": "Una pila es una estructura de datos de entradas ordenadas que solo se pueden introducir y eliminar por un extremo llamado:",
+      "respuesta": "Cima",
+      "incorrecta1": "Fondo",
+      "incorrecta2": "Medio",
+      "incorrecta3": "Elemento",
+      
+    },
+    {
+      "categoria": "Cola",
+      "pregunta": "¿Qué tipo de datos se pueden almacenar en esta pila?",
+      "respuesta": "Enteros",
+      "incorrecta1": "Enteros largos",
+      "incorrecta2": "String",
+      "incorrecta3": "Objetos",
+      "imagen": "https://i.ibb.co/WycShv5/Cola8.png",
+      "objectFit": "contain"
     }
-
+    
   ]
   LlamarPregunta()
 }
