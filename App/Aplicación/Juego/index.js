@@ -261,6 +261,14 @@ window.onload = function () {
       
     },
     {
+      "categoría":"Pilas",
+      "pregunta":"Si un programa intenta sacar un elemento de una pila vacía, este retornará un error denominado:",
+      "respuesta": "Desbordamiento negativo (underflow)",
+      "incorrecta1":"Desbordamiento (overflow)",
+      "incorrecta2":"No tendrá errores",
+      "incorrecta3":"El programa seguirá corriendo sin problemas" ,
+      },
+    {
       "categoria": "Pilas",
       "pregunta": "Una pila es una estructura de datos de entradas ordenadas que solo se pueden introducir y eliminar por un extremo llamado:",
       "respuesta": "Cima",
@@ -279,7 +287,7 @@ window.onload = function () {
       "imagen": "https://i.ibb.co/WycShv5/Cola8.png",
       "objectFit": "contain"
     }
-    
+
   ]
   LlamarPregunta()
 }
@@ -364,31 +372,83 @@ function OrdenarPregunta(n) {
 
 function Resultados() {
 
-  let porcentaje = Math.round((preguntas_correctas / preguntas_hechas) * 100)
 
+  let porcentaje = Math.round((preguntas_correctas  / (preguntas_hechas - 1)) * 100)
 
-  if (porcentaje <= 33) {
+  if (preguntas_correctas <= (preguntas_hechas -1) / 3) {
+    Swal.fire({
+      title: 'Necesitas estudiar más',
+      text: "Has sacado " + preguntas_correctas + " Preguntas buenas, de "
+        + (preguntas_hechas - 1)
+        + " Preguntas hechas \n" + "tu porcentaje de acierto es del: " + porcentaje + "%",
+      icon: 'error',
+      showCancelButton: true,
+      confirmButtonColor: '#14CEA8',
+      cancelButtonColor: '#0CA9A8',
+      confirmButtonText: 'Jugar de nuevo',
+      cancelButtonText: 'Estudiar de nuevo'
+    }).then((result) => {
+      if (result.isConfirmed) {
 
-    alert("Necesitas estudiar más \n" +
-      "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
-      + "El porcetaje de acierto es: " + porcentaje + "%")
+        window.location.href = "index.html"
+        
+      } else {
 
-  } else if (porcentaje > 33 && porcentaje <= 66) {
+        window.location.href = "../Paginas/first.html"
 
-    alert("Vamos, puedes llegar más alto \n"
-      + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
-      + "El porcetaje de acierto es: " + porcentaje + "%")
+      }
+    })
 
-  } else if (porcentaje > 66) {
-    
-    alert("Tienes un muy buen nivel, felicidades \n"
-      + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
-      + "El porcetaje de acierto es: " + porcentaje + "%")
+  } else if (preguntas_correctas > ((preguntas_hechas -1) / 3) && preguntas_correctas < ((preguntas_hechas -1) / 2)) {
 
+    Swal.fire({
+      title: 'Vamos, puedes llegar más alto',
+      text: "Has sacado " + preguntas_correctas + " Preguntas buenas, de "
+        + (preguntas_hechas - 1)
+        + " Preguntas hechas \n" + "tu porcentaje de acierto es del: " + porcentaje + "%",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#14CEA8',
+      cancelButtonColor: '#0CA9A8',
+      confirmButtonText: 'Jugar de nuevo',
+      cancelButtonText: 'Estudiar de nuevo'
+    }).then((result) => {
+      if (result.isConfirmed) {
 
+        window.location.href = "index.html"
+        
+      } else {
+
+        window.location.href = "../Paginas/first.html"
+
+      }
+    })
+  } else if (preguntas_correctas > ((preguntas_hechas -1) / 2)) {
+
+    Swal.fire({
+      title: 'Tienes muy buen nivel, felicidades',
+      text: "Has sacado " + preguntas_correctas + " Preguntas buenas, de "
+        + (preguntas_hechas - 1)
+        + " Preguntas hechas \n" + "tu porcentaje de acierto es del: " + porcentaje + "%",
+      icon: 'success',
+      showCancelButton: true,
+      confirmButtonColor: '#14CEA8',
+      cancelButtonColor: '#0CA9A8',
+      confirmButtonText: 'Jugar de nuevo',
+      cancelButtonText: 'Estudiar de nuevo'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        window.location.href = "index.html"
+        
+      } else {
+
+        window.location.href = "../Paginas/first.html"
+
+      }
+    })
   }
 
-  window.location.href = "../Paginas/first.html"/**Si se da click en el botón juego, te traslada a esta pagina */
 }
 
 
@@ -467,3 +527,56 @@ function select_id(id) {
 function style(id) {
   return select_id(id).style
 }
+
+
+
+
+
+
+/*
+  let porcentaje = Math.round((preguntas_correctas / preguntas_hechas) * 100)
+
+
+  if (porcentaje <= 33) {
+
+    swal ("Concentrate más \n" + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+      + "Tu porcentaje de acierto es de: " + porcentaje + "%")
+
+
+
+
+
+     swal({
+       title: "¡Necesitas estudiar más! \n",
+       text: "Concentrate más \n"
+         + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+         + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+       icon: "error"
+     });
+
+
+    } else if (porcentaje > 33 && porcentaje <= 66) {
+
+      swal({
+        title: "¡Puedes llegar más alto! \n",
+        text: "Haz otro repaso \n"
+          + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+          + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+        icon: "warning"
+      });
+
+
+    } else if (porcentaje > 66) {
+
+      swal({
+        title: "¡Felicidades!",
+        text: "Tienes muy buen nivel \n "
+          + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+          + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+        icon: "success"
+      });
+
+    }
+
+
+   */
