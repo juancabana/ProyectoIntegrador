@@ -532,3 +532,54 @@ function style(id) {
 
 
 
+<<<<<<< HEAD
+=======
+
+/*
+  let porcentaje = Math.round((preguntas_correctas / preguntas_hechas) * 100)
+
+
+  if (porcentaje <= 33) {
+
+    swal ("Concentrate más \n" + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+      + "Tu porcentaje de acierto es de: " + porcentaje + "%")
+
+
+
+
+
+     swal({
+       title: "¡Necesitas estudiar más! \n",
+       text: "Concentrate más \n"
+         + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+         + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+       icon: "error"
+     });
+
+
+    } else if (porcentaje > 33 && porcentaje <= 66) {
+
+      swal({
+        title: "¡Puedes llegar más alto! \n",
+        text: "Haz otro repaso \n"
+          + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+          + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+        icon: "warning"
+      });
+
+
+    } else if (porcentaje > 66) {
+
+      swal({
+        title: "¡Felicidades!",
+        text: "Tienes muy buen nivel \n "
+          + "Has sacado " + preguntas_correctas + " Preguntas buenas, de " + (preguntas_hechas - 1) + " Preguntas hechas \n"
+          + "Tu porcentaje de acierto es de: " + porcentaje + "%",
+        icon: "success"
+      });
+
+    }
+
+
+   */
+>>>>>>> bae14352f4beeb6f3cdb2a856424caa1d736e463
