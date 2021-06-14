@@ -67,7 +67,7 @@ window.onload = function () {
       "incorrecta1": " Eliminación ",
       "incorrecta2": " Inserción ",
       "incorrecta3": " Visualización ",
-      
+
     },
     {
       "categoria": "Pila & Cola",
@@ -113,6 +113,15 @@ window.onload = function () {
 
     },
     {
+      "categoria": "Colas",
+      "pregunta": "Una Cola es una colección ordenada de...",
+      "respuesta": "Elementos",
+      "incorrecta1": "Enteros",
+      "incorrecta2": "Strings",
+      "incorrecta3": "Números largos",
+
+    },
+    {
       "categoria": "Mixto",
       "pregunta": "¿Qué son las pilas y colas?",
       "respuesta": "Estructuras de datos",
@@ -133,7 +142,7 @@ window.onload = function () {
     {
       "categoria": "Mixto",
       "pregunta": "¿En cual de las estructuras (Pilas y colas), es necesario modificar directamente el programa para insertar o eliminar elementos?",
-      "respuesta": "Ningúna",
+      "respuesta": "Ninguna",
       "incorrecta1": "Pilas",
       "incorrecta2": "Colas",
       "incorrecta3": "Pilas y colas",
@@ -155,17 +164,8 @@ window.onload = function () {
       "respuesta": "Elementos",
       "incorrecta1": "Enteros",
       "incorrecta2": "Strings",
-      "incorrecta3": "Numeros largos",
+      "incorrecta3": "Números largos",
 
-    },
-    {
-      "categoria": "Colas",
-      "pregunta": "Una Cola es una colección ordenada de...",
-      "respuesta": "Elementos",
-      "incorrecta1": "Enteros",
-      "incorrecta2": "Strings",
-      "incorrecta3": "Numeros largos",
-      
     },
     {
       "categoria": "Pilas",
@@ -174,7 +174,7 @@ window.onload = function () {
       "incorrecta1": "Last-Integer, First-Object",
       "incorrecta2": "Last-Int, First-Out",
       "incorrecta3": "Last-In, First-Output",
-      
+
     },
     {
       "categoria": "Mixto",
@@ -193,7 +193,7 @@ window.onload = function () {
       "incorrecta1": "Apilar - Insertar",
       "incorrecta2": "Insertar - Mostrar",
       "incorrecta3": "Revelar - Desapilar",
-      
+
     },
     {
       "categoria": "Pilas",
@@ -202,7 +202,7 @@ window.onload = function () {
       "incorrecta1": "Se crea el primer elemento de la pila",
       "incorrecta2": "Se vacía la pila",
       "incorrecta3": "Se insertan todos los elementos de la pila",
-      
+
     },
     {
       "categoria": "Mixto",
@@ -221,7 +221,7 @@ window.onload = function () {
       "incorrecta1": "Se ordenan los elementos de la pila",
       "incorrecta2": "Se vacía la pila",
       "incorrecta3": "Se insertan todos los elementos de la pila de una vez",
-      
+
     },
     {
       "categoria": "Pilas",
@@ -230,7 +230,7 @@ window.onload = function () {
       "incorrecta1": "Se eliminan todos los elementos de la pila",
       "incorrecta2": "Se vacía la pila, menos el último",
       "incorrecta3": "Se elimina el primer elemento y el último",
-      
+
     },
     {
       "categoria": "Colas",
@@ -239,7 +239,7 @@ window.onload = function () {
       "incorrecta1": "First-Ingeniery, First-Out",
       "incorrecta2": "First-Index, First-Out",
       "incorrecta3": "First-In, First-Output",
-      
+
     },
     {
       "categoria": "Mixto",
@@ -258,16 +258,16 @@ window.onload = function () {
       "incorrecta1": "Si, ya que el vector tiene longitud infija",
       "incorrecta2": "No, ya que el vector tiene longitud infija",
       "incorrecta3": "Si, ya que el array tiene longitud fija",
-      
+
     },
     {
-      "categoría":"Pilas",
-      "pregunta":"Si un programa intenta sacar un elemento de una pila vacía, este retornará un error denominado:",
+      "categoría": "Pilas",
+      "pregunta": "Si un programa intenta sacar un elemento de una pila vacía, este retornará un error denominado:",
       "respuesta": "Desbordamiento negativo (underflow)",
-      "incorrecta1":"Desbordamiento (overflow)",
-      "incorrecta2":"No tendrá errores",
-      "incorrecta3":"El programa seguirá corriendo sin problemas" ,
-      },
+      "incorrecta1": "Desbordamiento (overflow)",
+      "incorrecta2": "No tendrá errores",
+      "incorrecta3": "El programa seguirá corriendo sin problemas",
+    },
     {
       "categoria": "Pilas",
       "pregunta": "Una pila es una estructura de datos de entradas ordenadas que solo se pueden introducir y eliminar por un extremo llamado:",
@@ -275,7 +275,7 @@ window.onload = function () {
       "incorrecta1": "Fondo",
       "incorrecta2": "Medio",
       "incorrecta3": "Elemento",
-      
+
     },
     {
       "categoria": "Cola",
@@ -286,6 +286,80 @@ window.onload = function () {
       "incorrecta3": "Objetos",
       "imagen": "https://i.ibb.co/WycShv5/Cola8.png",
       "objectFit": "contain"
+    },
+    /*************************************************************** */
+    {
+      "categoría": "Pila",
+      "pregunta": "Es la operación que se utiliza para insertar un dato en la pila",
+      "respuesta": "Push",
+      "incorrecta1": "Top",
+      "incorrecta2": "Insert",
+      "incorrecta3": "Pop"
+    },
+    {
+      "categoría": "Pila",
+      "pregunta": "La representación en memoria de las estructuras de datos tipo pila se lleva a cabo por medio de:",
+      "respuesta": "listas enlazadas y arreglos",
+      "incorrecta1": "Listas doblemente enlazadas",
+      "incorrecta2": "Arreglos",
+      "incorrecta3": "Listas enlazadas",
+    },
+    {
+      "categoría": "Pila",
+      "pregunta": "Es una estructura en donde los elementos son insertados y retirados desde la cima",
+      "respuesta": "Pilas",
+      "incorrecta1": "Listas",
+      "incorrecta2": "Colas",
+      "incorrecta3": "Ninguna de las anteriores",
+    },
+    {
+
+      "categoría": "Pila",
+      "pregunta": "¿Qué método se emplea para eliminar el elemento que esta en frente de la pila?",
+      "respuesta": "Pop",
+      "incorrecta1": "Push",
+      "incorrecta2": "Remove",
+      "incorrecta3": "Apilar",
+    },
+    {
+      "categoría": "Pila",
+      "pregunta": "Si un programa intenta sacar un elemento de una pila vacía, este provocara un error denominado",
+      "respuesta": "Desbordamiento negativo (underflow)",
+      "incorrecta1": "Desbordamiento (overflow)",
+      "incorrecta2": "No tendrá errores",
+      "incorrecta3": "El programa seguirá corriendo si algún problema",
+    },
+    {
+      "categoría": "Pila",
+      "pregunta": "Si se intenta agregar un elemento a una pila llena se producirá una excepción llamada:",
+      "respuesta": "Desbordamiento (overflow)",
+      "incorrecta1": "Desbordamiento negativo (underflow)",
+      "incorrecta2": "No tendrá excepciones",
+      "incorrecta3": "El programa seguirá corriendo si algún problema",
+    },
+    {
+      "categoría": "Pila",
+      "pregunta": "¿El rango de elementos que se pueden agregar a una pila de arrays es infinito?",
+      "respuesta": "No porque el array utilizado tiene un rango de elementos especifico",
+      "incorrecta1": "Si porque la dimensión de la pila no tiene limites",
+      "incorrecta2": "No porque todas las pilas tienen un único valor estandarizado mundialmente",
+      "incorrecta3": "Si porque las pilas tienen un limite pero que es continuo",
+    },
+    {
+      "categoría": "Cola",
+      "pregunta": "La representación en memoria de las estructuras de datos tipo Colas se lleva a cabo por medio de:",
+      "respuesta": "Listas enlazadas y arreglos",
+      "incorrecta1": "Arreglos",
+      "incorrecta2": "Listas doblemente enlazadas",
+      "incorrecta3":"Listas enlazadas",
+    },
+    {
+      "categoría": "Cola",
+      "pregunta": "¿Cuál es la diferencia entre una pila y una cola?",
+      "respuesta": "La pila utiliza el método LIFO (último en entrar, primero en salir) para acceder y agregar elementos de datos, mientras que la cola usa el método FIFO(primero en entrar, primero en salir) para acceder y agregar elementos de datos",
+      "incorrecta1": "La cola utiliza el método LIFO (último en entrar, primero en salir) para acceder y agregar elementos de datos, mientras que la pila usa el método FIFO(primero en entrar, primero en salir) para acceder y agregar elementos de datos",
+      "incorrecta2": "La pila utiliza arrays mientras que la cola no",
+      "incorrecta3": "Ninguna de las anteriores",
     }
 
   ]
@@ -373,9 +447,9 @@ function OrdenarPregunta(n) {
 function Resultados() {
 
 
-  let porcentaje = Math.round((preguntas_correctas  / (preguntas_hechas - 1)) * 100)
+  let porcentaje = Math.round((preguntas_correctas / (preguntas_hechas - 1)) * 100)
 
-  if (preguntas_correctas <= (preguntas_hechas -1) / 3) {
+  if (preguntas_correctas <= (preguntas_hechas - 1) / 3) {
     Swal.fire({
       title: 'Necesitas estudiar más',
       text: "Has sacado " + preguntas_correctas + " Preguntas buenas, de "
@@ -391,7 +465,7 @@ function Resultados() {
       if (result.isConfirmed) {
 
         window.location.href = "index.html"
-        
+
       } else {
 
         window.location.href = "../Paginas/first.html"
@@ -399,7 +473,7 @@ function Resultados() {
       }
     })
 
-  } else if (preguntas_correctas > ((preguntas_hechas -1) / 3) && preguntas_correctas < ((preguntas_hechas -1) / 2)) {
+  } else if (preguntas_correctas > ((preguntas_hechas - 1) / 3) && preguntas_correctas < ((preguntas_hechas - 1) / 2)) {
 
     Swal.fire({
       title: 'Vamos, puedes llegar más alto',
@@ -416,14 +490,14 @@ function Resultados() {
       if (result.isConfirmed) {
 
         window.location.href = "index.html"
-        
+
       } else {
 
         window.location.href = "../Paginas/first.html"
 
       }
     })
-  } else if (preguntas_correctas > ((preguntas_hechas -1) / 2)) {
+  } else if (preguntas_correctas > ((preguntas_hechas - 1) / 2)) {
 
     Swal.fire({
       title: 'Tienes muy buen nivel, felicidades',
@@ -440,7 +514,7 @@ function Resultados() {
       if (result.isConfirmed) {
 
         window.location.href = "index.html"
-        
+
       } else {
 
         window.location.href = "../Paginas/first.html"
