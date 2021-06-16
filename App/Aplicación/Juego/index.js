@@ -74,8 +74,8 @@ window.onload = function () {
       "pregunta": "Si tuvieras que elegir una estructura a inplementar en el procedimiento para un banco, ¿Qué opción tomarías?",
       "respuesta": "Cola",
       "incorrecta1": "Pila",
-      "incorrecta2": "null",
-      "incorrecta3": "null",
+      "incorrecta2": "Arrays",
+      "incorrecta3": "Variable estática",
     },
     {
       "categoria": "Pila",
@@ -84,7 +84,7 @@ window.onload = function () {
       "incorrecta1": " FIFO ",
       "incorrecta2": " FIFO/LIFO ",
       "incorrecta3": " LIFO/LIFO ",
-    },
+    },/*
     {
       "categoria": "Mixto",
       "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
@@ -287,7 +287,6 @@ window.onload = function () {
       "imagen": "https://i.ibb.co/WycShv5/Cola8.png",
       "objectFit": "contain"
     },
-    /*************************************************************** */
     {
       "categoría": "Pila",
       "pregunta": "Es la operación que se utiliza para insertar un dato en la pila",
@@ -360,7 +359,7 @@ window.onload = function () {
       "incorrecta1": "La cola utiliza el método LIFO (último en entrar, primero en salir) para acceder y agregar elementos de datos, mientras que la pila usa el método FIFO(primero en entrar, primero en salir) para acceder y agregar elementos de datos",
       "incorrecta2": "La pila utiliza arrays mientras que la cola no",
       "incorrecta3": "Ninguna de las anteriores",
-    }
+    }*/
 
   ]
   LlamarPregunta()
