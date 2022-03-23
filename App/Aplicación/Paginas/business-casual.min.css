@@ -1,56 +1,178 @@
-body{
-   /*Se importa la imagen y los colores en degrade se definen*/
-   background-image:linear-gradient(rgba(26, 70, 53, 0.356),rgba(15, 45, 47, 0.39)),url(../img/bg.jpg);
-    background-attachment:fixed;background-position:center;
-    background-size:cover
-   }
-    /*fuente del hipertexto del pie de página, color, margen, etc.*/
-    h2{font-family:Raleway}p,cite{line-height:1.75}    
-   .texto-piePag{color:rgb(255, 255, 255)}/*Se define el color de la letra del pie de pagina*/
-   .encabezadoPag{margin-top:5rem;margin-bottom:5rem;text-transform:uppercase;line-height:1;font-family:Raleway}
-   .encabezadoPag .encabezadoPag-superior{display:block;font-size:2rem;font-weight:800}
-    /*Margen máximo y mínimo de las secciones de las páginas*/
-   .sección-Pag{margin-top:5rem;margin-bottom:5rem}
-   .sección-PagF{margin-top:5rem;margin-bottom:35rem}
-   /*Estilo de los encabezados de los Nav*/
-   .sección-título{text-transform:uppercase}.sección-título /*Se transforma todo a Mayuscula*/
-   .sección-título-superior{display:block;font-size:1rem;font-weight:800}
-   .sección-título-inferior{display:block;font-size:3rem;font-weight:100}
-    /*Color de fondo de los bloques*/
-   .bg-desvanencido{background-color:rgba(242, 255, 255, 0.85)}
-    /*Color del mainNav, letras, etc*/
-   #mainNav{background-color:rgba(50, 146, 138, 0.9);font-family:Raleway;font-weight:800}
-    /*color del texto activo*/
-   #mainNav  .nav-item.active .nav-link{color:#00ffd5}@media (min-width:992px)
-    {#mainNav .nav-item {font-size:.9rem}
-    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgb(179, 247, 225)}
-    /*color mientras el mouse está encima*/
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgb(255, 255, 255);
-    }
-    #mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#ffffff}}
-   .intro{position:relative}@media (min-width:992px){.intro .intro-img{width:75%;float:right}
-   .intro .intro-text{left:0;width:60%;margin-top:3rem;position:absolute}
-   .intro .intro-text .intro-button{width:100%;left:0;position:absolute;bottom:-2rem}}@media (min-width:1200px){
-       .intro .intro-text{width:45%}}
-       /*Color del "Para recordar"*/
-   .cta{padding-top:2rem;padding-bottom:2rem;background-color:rgba(41, 255, 226, 0.856)}
-   .cta .cta-inner{position:relative;padding:2rem;margin:.2rem;background-color:rgba(255, 255, 255, 0.863)}
-   .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;
-    /*Estilos de los botones del footer*/
-    
-      /*Ancho del borde, poscición de los parrafos que acompañan a los ejemplos, subtitulos, etc.*/
-      z-index:-1}
-      @media (min-width:992px){
-      .encabezado-ejemplo .encabezado-ejemplo-img{position:relative;z-index:0}
-      .encabezado-ejemplo .encabezado-ejemplo-content{
-       margin-top:-5rem;
-       position:relative;
-       z-index:1}}@media (min-width:992px){
-       .item-TercNiv .item-TercNiv-title{position:relative;z-index:1;margin-bottom:-3rem}
-   .item-TercNiv .item-TercNiv-img{position:relative;z-index:0;max-width:60vw}
-   .item-TercNiv .item-TercNiv-description{position:relative;z-index:1;margin-top:-3rem;max-width:50vw}}
-    /*Color de fondo del pie de pagina*/
-   .footer strong{font-size:1.2rem}.footer{background-color:rgba(34, 126, 118, 0.76)}
-    /*Color del texto principal*/
-   .texto-principal{color:#3ec093!important}
+body {
+  /*Se importa la imagen y los colores en degrade se definen*/
+  background-image: linear-gradient(
+      rgba(26, 70, 53, 0.356),
+      rgba(15, 45, 47, 0.39)
+    ),
+    url(../img/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/*fuente del hipertexto del pie de página, color, margen, etc.*/
+h2 {
+  font-family: Raleway;
+}
+p,
+cite {
+  line-height: 1.75;
+}
+.texto-piePag {
+  color: rgb(255, 255, 255);
+} /*Se define el color de la letra del pie de pagina*/
+.encabezadoPag {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: Raleway;
+}
+.encabezadoPag .encabezadoPag-superior {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+/*Margen máximo y mínimo de las secciones de las páginas*/
+.sección-Pag {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.sección-PagF {
+  margin-top: 5rem;
+  margin-bottom: 35rem;
+}
+/*Estilo de los encabezados de los Nav*/
+.sección-título {
+  text-transform: uppercase;
+}
+.sección-título /*Se transforma todo a Mayuscula*/
+   .sección-título-superior {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.sección-título-inferior {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+/*Color de fondo de los bloques*/
+.bg-desvanencido {
+  background-color: rgba(242, 255, 255, 0.85);
+}
+/*Color del mainNav, letras, etc*/
+#mainNav {
+  background-color: rgba(50, 146, 138, 0.9);
+  font-family: Raleway;
+  font-weight: 800;
+}
+/*color del texto activo*/
+#mainNav .nav-item.active .nav-link {
+  color: #00ffd5;
+}
+@media (min-width: 992px) {
+  #mainNav .nav-item {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(179, 247, 225);
+  }
+  /*color mientras el mouse está encima*/
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #ffffff;
+  }
+}
+.intro {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+/*Color del "Para recordar"*/
+.cta {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(41, 255, 226, 0.856);
+}
+.cta .cta-inner {
+  position: relative;
+  padding: 2rem;
+  margin: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  /*Estilos de los botones del footer*/
+
+  /*Ancho del borde, poscición de los parrafos que acompañan a los ejemplos, subtitulos, etc.*/
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .encabezado-ejemplo .encabezado-ejemplo-img {
+    position: relative;
+    z-index: 0;
+  }
+  .encabezado-ejemplo .encabezado-ejemplo-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (min-width: 992px) {
+  .item-TercNiv .item-TercNiv-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .item-TercNiv .item-TercNiv-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .item-TercNiv .item-TercNiv-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+/*Color de fondo del pie de pagina*/
+.footer strong {
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: rgba(34, 126, 118, 0.76);
+}
+/*Color del texto principal*/
+.texto-principal {
+  color: #3ec093 !important;
+}

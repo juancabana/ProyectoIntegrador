@@ -51,7 +51,7 @@ window.onload = function () {
       "incorrecta3": "Objetos",
       "imagen": "https://i.ibb.co/Y3yKpB3/Pila8.png",
       "objectFit": "contain"
-    },
+    },/*
     {
       "categoria": "Pila",
       "pregunta": " La representación en memoria de las estructuras de datos tipo pila se lleva a cabo por medio de: ",
@@ -84,7 +84,7 @@ window.onload = function () {
       "incorrecta1": " FIFO ",
       "incorrecta2": " FIFO/LIFO ",
       "incorrecta3": " LIFO/LIFO ",
-    },/*
+    },
     {
       "categoria": "Mixto",
       "pregunta": "¿A qué estructura de datos se está haciendo alusión aquí?",
@@ -574,7 +574,7 @@ function oprimir_btn(i) {
   setTimeout(() => {
     reiniciar()
     suspender_botones = false
-  }, 100);
+  }, 1000);
 }
 
 // let p = prompt("numero")
